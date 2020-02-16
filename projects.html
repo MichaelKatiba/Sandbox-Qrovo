@@ -15,267 +15,285 @@
 </head>
 <body>
     
-    <header class="header">
-        <a href="index.html"><img src="img/Qrovo.png" class="logo" alt="logo-image">
+
+    <a href="index.html"><img src="img/Qrovo.png" class="logo" alt="logo-image">
         <h1 class="logo-name">Qrovo</h1>
         </a>
-        <div class="nav-box">
+
+    <div class="nav-box">
+        <nav class = navigation>
+                <ul class="nav-toggle-slide">
+                    <!-- <li><button onclick="menuBar()" class="menu-bar" id="menu-close" id="nav-toggle"><img src="img/close.jpg" alt=""></button></li> -->
+
+                        <li><button onclick="menuBar()" class="menu-bar" id="nav-toggle">&#9776;</button></li>
+                        <li><a href="index.html" class="list-item">Home</a></li>
+                        <li><a href="about.html" class="list-item">About</a></li>
+                        <!-- <li><a href="#" class="list-item">Services</a></li> -->
+                        <li><a href="projects.html" class="list-item">Portfolio</a></li>
+                        <li><a href="contact.html" class="list-item">Contact</a></li>
+                        <!-- <li><a href="#" class="list-item">Blog</a></li> -->
+                </ul>
+        </nav>   
+    </div>
+    <header class="header">
+        <!-- <div class="nav-box">
             <nav class = navigation>
                     <ul class="nav-toggle-slide">
                             <li><button onclick="menuBar()" class="menu-bar" id="nav-toggle">&#9776;</button></li>
                             <li><a href="index.html" class="list-item">Home</a></li>
                             <li><a href="about.html" class="list-item">About</a></li>
-                            <!-- <li><a href="#" class="list-item">Services</a></li> -->
+                             <li><a href="#" class="list-item">Services</a></li>
                             <li><a href="projects.html" class="list-item">Projects</a></li>
                             <li><a href="contact.html" class="list-item">Contact</a></li>
-                            <!-- <li><a href="#" class="list-item">Blog</a></li> -->
+                            <li><a href="#" class="list-item">Blog</a></li>
                     </ul>
             </nav>   
-        </div>
+        </div> -->
         <div class="main-title">
-            <img src="img/pic-15.png" class="header-img" alt="">
+            <!-- <img src="img/pic-33.jpg" class="header-img" alt="header-image"> -->
             <div class = "heading">
-                <h1 class="main-heading" style="text-align: center;">Qrovo</h1>
-                <h1 class="sub-heading">Wonderful Web Designs & Logos!</h1>
-                <button class= "primary-btn btn"><a href="img/Resume-Michael-Katiba.pdf" download="Michael's CV" target="blank"><img src="img/New Resume-Michael Katiba.pdf" alt="">Download CV</a></button>
+                <img id="profile-picture" src="img/ME.JPEG" alt="michael's photo">
+
+                <h1 class="main-heading" style="text-align: center;">Hi, I'm Michael Katiba</h1>
+                <h1 class="sub-main">Web Developer & Visual Artist</h1>
+
+                <div class="dotters">
+                    <div class="three-dots">
+                        <a href="#" class="icons" target="blank">
+                            <!-- <i class="fab fa-github aria-hidden="true"></i></i> -->
+                            <svg class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path class="icons" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                            </a>
+                    </div>
+                    <div class="three-dots">
+                        <a href="" target="blank">
+                            <!-- <i class="fab fa-linkedin"></i> -->
+                            <svg class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                            </a>
+                    </div>
+                    <div class="three-dots">
+                        <a href="" target="blank">
+                            <!-- <i class="fab fa-facebook"></i> -->
+                            <svg class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                            </a>
+                    </div>
+                    
+                </div>
             </div>  
         </div> 
     </header>
 
+    <h2 class="projects-head">Portfolio</h2>
+        <h2 class="projects-head muted-text">Check out my works!</h2>
 
-    <h2 class="projects-head">Projects</h2>
-    <div class="dash-bottom dash hover"></div>
-    <section class="projects-box">
-        <div class="img-box">
-            <div class="dots"></div>
-                <img src="img/gif 1.gif" alt="" class="project-pic-1 project-pic">
-            <div class="box-2">
-                <button class="projects-btn-1 projects-btn" onclick="projectOne()">
-                    Coming soon
-                </button>
+        <div class="dash-bottom dash hover"></div>
+        <section class="projects-box">
+            <div class="img-box">
+                <div class="dots"><h5>Restaurant Logo</h5></div>
+                    <img src="img/pic-37.png" alt="" class="project-pic-1 project-pic">
+                <div class="box-2">
+                    <button class="projects-btn-1 projects-btn" onclick="projectOne()">
+                       Learn more &rarr;
+                    </button>
+                </div>
             </div>
-        </div>
 
-        <div class="img-box">
-                <div class="dots"></div>
-                <img src="img/gif 1.gif" alt="" class="project-pic-2 project-pic">
-                <div class="box-2">
-                    <button class="projects-btn-1 projects-btn" onclick="projectTwo()">
-                        Coming soon
-                    </button>
-                </div>
-        </div>
-
-        <div class="img-box">
-                <div class="dots"></div>
-                <img src="img/gif 1.gif" alt="" class="project-pic-3 project-pic">
-                <div class="box-2">
-                    <button class="projects-btn-2 projects-btn" onclick="projectThree()">
-                        Coming soon
-                    </button>
+            <div class="img-box">
+                    <div class="dots"><h5>Media Firm Logo</h5></div>
+                    <img src="img/Logo-Project-1.png" alt="" class="project-pic-2 project-pic">
+                    <div class="box-2">
+                        <button class="projects-btn-1 projects-btn" onclick="projectTwo()">
+                       Learn more &rarr;
+                        </button>
                     </div>
-        </div>
+            </div>
 
-        <div class="img-box">
-                <div class="dots"></div>
-                <img src="img/gif 1.gif" alt="" class="project-pic-4 project-pic">
-                <div class="box-2">
-                    <button class="projects-btn" onclick="projectFour()">
-                        Coming soon
-                    </button>
-                    </div>
-        </div>
+            <div class="img-box">
+                    <div class="dots"><h5>Coming Soon Website</h5></div>
+                    <img src="img/desktop-preview.jpg" alt="" class="project-pic-3 project-pic">
+                    <div class="box-2">
+                        <button class="projects-btn-2 projects-btn" onclick="projectThree()">
+                            Learn more &rarr;
+                        </button>
+                        </div>
+            </div>
 
-        <div class="img-box">
-                <div class="dots"></div>
-                <img src="img/gif 1.gif" alt="" class="project-pic-5 project-pic">
-                <div class="box-2">
-                    <button class="projects-btn" onclick="projectFive()">
-                        Coming soon
-                    </button>
-                </div>
-        </div>
-
-        <div class="img-box">
-                <div class="dots"></div>
-                <img src="img/gif 1.gif" alt="" class="project-pic-6 project-pic">
-                <div class="box-2">
-                        <button class="projects-btn" onclick="projectSix()">
+            <div class="img-box">
+                    <div class="dots"></div>
+                    <img src="img/gif 1.gif" alt="" class="project-pic-4 project-pic">
+                    <div class="box-2">
+                        <button class="projects-btn" onclick="projectFour()">
                             Coming soon
                         </button>
-                        
-                </div>
-        </div>
-
-    </section>
-
-    <section>
-<!-- ALERT!!!: PROJECT BOX  -->
-<!-- <div class="projects-pop">
-<button class ="close-icon" onclick="closeBtn()"><p>X</p></button>
-<section class="project-box-1">
-    <img src="img/pic 1.jpg" alt=""  class="about-pic-1 profile">
-    <!-- <img src="img/ME.JPEG" alt="" class="about-pic-2 profile"> 
-    <div class="about-info">
-            <article>
-                <p style="font-size: 20px;">I am a self-taught Junior Web Developer and Logo Designer who loves working on new and exciting ideas. If you have an idea and want to make it into a reality or have app, logo or website that needs new life! So this is where i come in! With my knowledge i can take your idea to the next level. So let's have a talk and discuss this idea in your head.</p>
-            </article>
-        </div>
-</section>
-</div> -->
-<!-- ALERT!!!: PROJECT BOX  -->
-
-
-<div class="projects-modal-0">
-<div class="projects-content-0 pop-content">
-    <button class ="close-icon" onclick="closeBtn()">X</button>
-    <div class="content-text">
-        <h3 class="projects-title">Superb</h3>
-        <p>Lorem ipsum dolor, sit amet consectcta molestiae eum ipsa aspernatur molestiae eum ipsa aspernatur?</p>
-        <ul>
-            <li>Html</li>
-            <li>Css</li>
-            <li>Javascript</li>
-        </ul>
-    </div>
-    <img src="img/pic-1.jpg" alt="" class="content-img">
-</div>
-</div>
-<div class="projects-modal-1">
-<div class="projects-content-1  pop-content">
-    <button class ="close-icon" onclick="closeBtn()">X</button>
-    <div class="content-text">
-        <h3 class="projects-title">Superb</h3>
-        <p>sectcta molestiae eum ipsa aspernatur molestiae L loloorem ipsum dolor, sit ametlestiae eum ipsa asperna coneum ipsa aspernatur?</p>
-        <ul>
-            <li>Html</li>
-            <li>Css</li>
-            <li>Javascript</li>
-        </ul>
-    </div>
-    <img src="img/pic-5.jpg" alt=""  class="content-img">
-</div>
-</div>
-
-<div class="projects-modal-2">
-<div class="projects-content-2  pop-content">
-    <button class ="close-icon" onclick="closeBtn()">X</button>
-    <div class="content-text">
-        <h3 class="projects-title">Superb</h3>
-        <p>ernatur molestiae eum ipsa aspernatur the Lorem ipsum dolor, sit amet consectcta molestiae eum ipsa soon?</p>
-        <ul>
-            <li>Html</li>
-            <li>Css</li>
-            <li>Javascript</li>
-        </ul>
-    </div>
-    <img src="img/pic-3.jpg" alt="" class="content-img">
-</div>
-</div>
-
-<div class="projects-modal-3">
-<div class="projects-content-3  pop-content">
-    <button class ="close-icon" onclick="closeBtn()">X</button>
-    <div class="content-text">
-        <h3 class="projects-title">Superb</h3>
-        <p>ernatur molestiae eum ipsa aspernatur the Lorem ipsum dolor, sit amet consectcta molestiae eum ipsa soon?</p>
-        <ul>
-            <li>Html</li>
-            <li>Css</li>
-            <li>Javascript</li>
-        </ul>
-    </div>
-    <img src="img/pic-16.png" alt="" class="content-img">
-</div>
-</div>
-
-<div class="projects-modal-4">
-<div class="projects-content-4  pop-content">
-    <button class ="close-icon" onclick="closeBtn()">X</button>
-    <div class="content-text">
-        <h3 class="projects-title">Superb</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis labore beatae repellendus. Asperiores, deleniti suscipit mollitia ad amet, animi recusandae corporis explicabo veniam, temporibus provident laudantium odit? Quis, cum ducimus! ernatur molestiae eum ipsa aspernatur the Lorem ipsum dolor, sit amet consectcta molestiae eum ipsa soon?</p>
-        <ul>
-            <li>Html</li>
-            <li>Css</li>
-            <li>Javascript</li>
-        </ul>
-    </div>
-    <img src="img/pic-4.jpg" alt="" class="content-img">
-</div>
-</div>
-
-<div class="projects-modal-5">
-<div class="projects-content-5  pop-content">
-    <button class ="close-icon" onclick="closeBtn()">X</button>
-    <div class="content-text">
-        <h3 class="projects-title">Superb</h3>
-        <p>ernatur molestiae eum ipsa aspernatur the Lorem ipsum dolor, sit amet consectcta molestiae eum ipsa soon?</p>
-        <ul>
-            <li>Html</li>
-            <li>Css</li>
-            <li>Javascript</li>
-        </ul>
-    </div>
-    <img src="img/pic-20.png" alt="" class="content-img">
-</div>
-</div>
-
-<div class="projects-modal-6">
-<div class="projects-content-6  pop-content">
-    <button class ="close-icon" onclick="closeBtn()">
-        <img src="img/close.jpg" alt="close-button">
-    </button>
-    <div class="content-text">
-        <h3 class="projects-title">Superb</h3>
-        <p>ernatur molestiae eum ipsa aspernatur the Lorem ipsum dolor, sit amet consectcta molestiae eum ipsa soon?</p>
-        <ul>
-            <li>Html</li>
-            <li>Css</li>
-            <li>Javascript</li>
-        </ul>
-    </div>
-    <img src="img/pic-14.png" alt="" class="content-img">
-</div>
-</div>
-
-</section>
-</main>
-
-<section class="contact-box" style="padding-top: 10px;">
-    <h2>Contact</h2>
-    <div class="dash-bottom dash hover"></div>
-    <p class="contact-note" style="text-align: center;">Let's discuss how best i can add value to your ideas. Send me an Email on the address below!</p><br>
-    <div class="contact-info">
-            <div class="form">
-                   <div class="form-name form-item">
-                    <label for="username">Full Names:</label><br>
-                    <input type="text" name="name" id="fullname user">
-                   </div>
-                    
-                   <div class="form-email form-item">
-                    <label for="username">Email:</label><br>
-                    <input type="text" name="username" id="useremail user">
-                   </div>
-                   <div class="form-message form-item">
-                    <label for="text">Message:</label><br>
-                    <textarea id="form-message" placeholder="Hi Sir …""></textarea><br>
-                    <input class="submit-btn" type="button" value="submit">
-                   </div>
-                    
-                </form>
+                        </div>
             </div>
-    </div>
-</section>
+
+            <div class="img-box">
+                    <div class="dots"></div>
+                    <img src="img/gif 1.gif" alt="" class="project-pic-5 project-pic">
+                    <div class="box-2">
+                        <button class="projects-btn" onclick="projectFive()">
+                            Coming soon
+                        </button>
+                    </div>
+            </div>
+
+            <div class="img-box">
+                    <div class="dots"></div>
+                    <img src="img/gif 1.gif" alt="" class="project-pic-6 project-pic">
+                    <div class="box-2">
+                            <button aria-disabled="false" class="projects-btn" onclick="projectSix()">
+                                Coming soon
+                            </button>
+                            
+                    </div>
+            </div>
+
+        </section>
 
 
-<footer style="background-color: black;">
-<div class="footer-info">
-    <p style="color: white; font-size: 18px; text-align: center;">Made by Michael Katiba</p>
-    <p style="color: white; font-size: 18px; text-align: center;">Email: qrovodesigns@gmail.com</p>
-    <p style="color: white; font-size: 18px; text-align: center;">© 2020 Qrovo. All rights reserved</p>
-</div>
-</footer>
+        <div class="projects-modal-0">
+            <div class="projects-content-0 pop-content">
+                <button class ="close-icon" onclick="closeBtn()">&times;</button>
+                <div class="content-text">
+                    <h3 class="projects-title">Superb</h3>
+                    <p style="width: 100%;">Lorem ipsum dolor, sit amet consectcta molestiae eum ipsa aspernatur molestiae eum ipsa aspernatur?</p>
+                    <ul>
+                        <li>Html</li>
+                        <li>Css</li>
+                        <li>Javascript</li>
+                    </ul>
+                </div>
+                <div class="content-images">
+                    <img src="img/pic-37.png" alt="" class="content-img">
+                </div>
+            </div>
+        </div>
+        <div class="projects-modal-1">
+            <div class="projects-content-1  pop-content">
+                <button class ="close-icon" onclick="closeBtn()">&times;</button>
+                <div class="content-text">
+                    <h3 class="projects-title">Superb</h3>
+                    <p>sectcta molestiae eum ipsa aspernatur molestiae L loloorem ipsum dolor, sit ametlestiae eum ipsa asperna coneum ipsa aspernatur?</p>
+                    <ul>
+                        <li>Html</li>
+                        <li>Css</li>
+                        <li>Javascript</li>
+                    </ul>
+                </div>
+                <div class="content-images">
+                    <img src="img/Logo-Project-1.png" alt=""  class="content-img">
+                </div>
+            </div>
+        </div>
+        
+        <div class="projects-modal-2">
+            <div class="projects-content-2  pop-content">
+                <button class ="close-icon" onclick="closeBtn()">&times;</button>
+                <div class="content-text">
+                    <h3 class="projects-title"><span style="color: #770032;">Logo Name:</span><br> Motion Light Studio</h3>
+                    <p style="font-size: 16px;">This logo is for an imaginary media company/studio which crossed my mind as i was trying make something creative with letters "M & L". I designed this elegant modern logo with the following technologies:</p>
+                    <ul>
+                        <li>Inkscape &</li>
+                        <li>Photoshop</li>
+                        <p>For a new or similar customized Logo for your brand, kindly get in touch with me.</p>
+                    </ul>
+                </div>
+                <div class="content-images">
+                    <img src="img/desktop-design.jpg" alt="" class="content-img">
+                </div>
+            </div>
+        </div>
+        
+        <div class="projects-modal-3">
+            <div class="projects-content-3  pop-content">
+                <button class ="close-icon" onclick="closeBtn()">&times;</button>
+                <div class="content-text">
+                    <h3 class="projects-title">Superb</h3>
+                    <p>ernatur molestiae eum ipsa aspernatur the Lorem ipsum dolor, sit amet consectcta molestiae eum ipsa soon?</p>
+                    <ul>
+                        <li>Html</li>
+                        <li>Css</li>
+                        <li>Javascript</li>
+                    </ul>
+                </div>
+                <div class="content-images">
+                    <img src="img/pic-16.png" alt="" class="content-img">
+                </div>
+            </div>
+        </div>
+        
+        <div class="projects-modal-4">
+            <div class="projects-content-4  pop-content">
+                <button class ="close-icon" onclick="closeBtn()">&times;</button>
+                <div class="content-text">
+                    <h3 class="projects-title">Superb</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis labore beatae repellendus. Asperiores, deleniti suscipit mollitia ad amet, animi recusandae corporis explicabo veniam, temporibus provident laudantium odit? Quis, cum ducimus! ernatur molestiae eum ipsa aspernatur the Lorem ipsum dolor, sit amet consectcta molestiae eum ipsa soon?</p>
+                    <ul>
+                        <li>Html</li>
+                        <li>Css</li>
+                        <li>Javascript</li>
+                    </ul>
+                </div>
+                <div class="content-images">
+                    <img src="img/pic-4.jpg" alt="" class="content-img">
+                </div>
+            </div>
+        </div>
+        
+        <div class="projects-modal-5">
+            <div class="projects-content-5  pop-content">
+                <button class ="close-icon" onclick="closeBtn()">&times;</button>
+                <div class="content-text">
+                    <h3 class="projects-title">Superb</h3>
+                    <p>ernatur molestiae eum ipsa aspernatur the Lorem ipsum dolor, sit amet consectcta molestiae eum ipsa soon?</p>
+                    <ul>
+                        <li>Html</li>
+                        <li>Css</li>
+                        <li>Javascript</li>
+                    </ul>
+                </div>
+                <div class="content-images">
+                    <img src="img/desktop-design.jpg" alt="" class="content-img">
+                </div>
+            </div>
+        </div>
+
+
+        <section class="contact-box" style="padding-top: 10px;">
+            <h2 style="color: #fff;">Contact</h2>
+            <div class="dash-bottom dash hover"></div>
+            <p class="contact-note" style="text-align: center; color: #fff;">Let's discuss how best i can add value to your ideas. Send me an Email on the address below!</p><br>
+            <div  class="contact-info">
+                    <div class="form">
+                        <form data-netlify-recaptcha="true" data-netlify="true" type="file" action="POST">
+                           <div class="form-name form-item">
+                            <label for="username">Full Names:</label><br>
+                            <input type="text" name="name" id="fullname user">
+                           </div>
+                            
+                           <div class="form-email form-item">
+                            <label for="username">Email:</label><br>
+                            <input type="text" name="username" id="useremail user">
+                           </div>
+                           <div class="form-message form-item">
+                            <label for="text">Message:</label><br>
+                            <textarea id="form-message" placeholder="Your Message…""></textarea><br>
+                            <input class="submit-btn" type="button" value="submit">
+                           </div>
+                           <div data-netlify-recaptcha="true"></div>  
+                        </form>
+                    </div>
+            </div>
+    </section>
+    
+
+    <footer style="background: url(img/pic-14.png);">
+        <div class="footer-info" style="background-image: linear-gradient(to right bottom, #f78401, #c40aca );">
+            <p style="color: white; font-size: 18px; text-align: center;">Made by Michael Katiba</p>
+            <p style="color: white; font-size: 18px; text-align: center;">Email: qrovodesigns@gmail.com</p>
+            <p style="color: white; font-size: 18px; text-align: center;">© 2020 Qrovo. All rights reserved</p>
+        </div>
+        </footer>
 
 <script src="js/app.js"></script>
 

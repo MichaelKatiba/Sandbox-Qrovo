@@ -2,11 +2,26 @@ let toggleStatus = 1;
 function menuBar(){
 if(toggleStatus == 1){
     document.querySelector(".navigation").style.left = "0px";
+    // var close = document.querySelector('#menu-close').style.visibility = "hidden";
+
     toggleStatus = 0;
 } else if(toggleStatus == 0){
     document.querySelector(".navigation").style.left = "-240px";
+    // document.querySelector(body).style.left = "0px";
+
     toggleStatus = 1;
+
+
 } 
+}
+let pageExit = "x";
+function exit() {
+    if (pageExit == "x") {
+    document.querySelector(".navigation").style.left = "-240px";
+    pageExit = "y";
+    } else{
+    menuBar();
+    }
 }
 
 
@@ -99,80 +114,8 @@ function closeBtn() {
 }
 
 
-// let subHead = 'effect';
-// function subEffect() {
-//     if(subHead == 'effect') {
-//         document.querySelector('.dash').style.animationName = 'dashMotion';
-//         subHead = 'no effect';
-//     } else if (subHead == 'no effect'){
-//         document.querySelector('.dash').style.animationName = '';
-
-//     }
-// }
 
 
-// // function indexChanger (){
-//     // let profile = 'top';
-//     // if (profile == 'top') {
-//     //     document.querySelector('.about-pic-1').style.zIndex = '1';
-//     //     profile = 'bottom';
-//     // } else if (profile == 'bottom') {
-//     //     document.querySelector('.about-pic-2').style.zIndex = '0';
-//     //     // document.querySelector('.about-pic-2').style.zIndex ='0';
-//     //     profile = 'top';
-//     // }
-// // }
-
-// // function indexOff() {
-// //     let offIndex = 3;
-// //     if (offIndex == 3) {
-// //         document.querySelector('.about-pic-1').style.zIndex ='0';
-// //         document.querySelector('.about-pic-2').style.zIndex ='1';
-// //         offIndex = 1;
-// //     } else if(offIndex == 1){
-// //         document.querySelector('.about-pic-1').style.zIndex = '0';
-// //         document.querySelector('.about-pic-2').style.zIndex ='8';
-// //        offIndex = 3;
-// //     } else {
-// //         document.querySelector('.about-pic-1').style.zIndex ='0';
-// //         document.querySelector('.about-pic-2').style.zIndex ='0';
-// //     }
-// // }
-
-
-// // let indexStatus = 'pic1';
-
-// // function indexChanger() {
-// //     let status = document.querySelectorAll('div');
-// //     status.classList.add('profile')
-
-//     // let profile = 'top';
-//     // if (profile == 'top') {
-//     //     document.querySelector('.about-pic-1').style.zIndex = '1';
-    //     profile = 'bottom';
-    // } else if (profile == 'bottom') {
-    //     document.querySelector('.about-pic-2').style.zIndex = '0';
-    //     // document.querySelector('.about-pic-2').style.zIndex ='0';
-    //     profile = 'top';
-    // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function pageMotion() {
+    document.querySelector('#about').scrollIntoView = '2s';
+}
