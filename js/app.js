@@ -6,7 +6,7 @@ if(toggleStatus == 1){
 
     toggleStatus = 0;
 } else if(toggleStatus == 0){
-    document.querySelector(".navigation").style.left = "-240px";
+    document.querySelector(".navigation").style.left = "-2000px";
     // document.querySelector(body).style.left = "0px";
 
     toggleStatus = 1;
@@ -17,12 +17,13 @@ if(toggleStatus == 1){
 let pageExit = "x";
 function exit() {
     if (pageExit == "x") {
-    document.querySelector(".navigation").style.left = "-240px";
+    document.querySelector(".navigation").style.left = "-320px";
     pageExit = "y";
     } else{
-    menuBar();
+    document.querySelector(".navigation").style.left = "-320px";
     }
 }
+
 
 
 let popZero = document.querySelector('.projects-modal-0');
