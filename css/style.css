@@ -21,6 +21,17 @@ body{
     font-family: "Century Gothic", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #dbdada;
     font-size: 18px;
+    
+
+}
+
+@font-face {
+    font-family: 'introrustg-base2line';
+    src: url('introrustg-base2line-webfont.woff2') format('woff2'),
+         url('introrustg-base2line-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 .dotters{
@@ -346,7 +357,7 @@ li a.list-desk{
 header{
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     background-image: linear-gradient(to right bottom,#ff0000ab, #e94c0e9d),url(../img/pic-33.jpg);
     background-size: cover;
     background-position: top;
@@ -367,7 +378,9 @@ header{
 
 .main-heading{
     position: relative;
-    font-family: "maagkramp", "Century Gothic" ,Arial, Helvetica, sans-serif;
+    font-family: 'introrustg-base2line',"maagkramp", "Century Gothic" ,Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
     font-size: 60px;
     color: #ffffff;
     margin: auto;
@@ -385,7 +398,7 @@ header{
 .sub-heading{
     font-family:"Century Gothic", Arial, Helvetica, sans-serif;
     font-size: 18px;
-    font-weight:500;
+    font-weight: lighter;
     letter-spacing: 10px;
     word-spacing: 15px;
     color: #1b1b1b;
@@ -435,6 +448,22 @@ section{
     position: relative;
     margin: auto;
     height: 100%;
+}
+
+.about-info{
+    opacity: 0;
+    transform: translateX(-150px);
+    transition: all 0.8s ease-in-out;
+}
+
+.intro-appear{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.intro-appear-left{
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 .about-pic-1 {
@@ -489,6 +518,7 @@ section{
     /* top: 400px; */
     justify-items: center;
     padding-bottom: 100px;
+
 }
 
 .img-box{
@@ -662,8 +692,8 @@ button{
     overflow-y: scroll;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
-    background-color: #000000;
-    border: #f8f8f8 5px solid;
+    background-color: #000000d8;
+    border: #f8f8f8 3px solid;
     padding: 20px;
     border-radius: 10px;
     margin: auto;
@@ -821,8 +851,8 @@ button{
 
 
 form input{
-    border: solid silver 2px;
-    border-radius: 5px;
+    border: solid rgb(255, 255, 255) 1px;
+    border-radius: 2px;
     outline: none;
     padding: 2px 10px;
     margin-bottom: 18px;
@@ -832,18 +862,14 @@ form input{
 
 .form{
     padding: 20px;
-    background: #2b2b2bfa;
+    background: #2b2929fa;
     width: 80%;
     color: white;
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
 }
 
 .form-item{
-    /* flex-basis: 250px; */
-    flex-grow: 1;
-   
     width: 100%;
     font-size: 20px;
 
@@ -945,6 +971,7 @@ footer{
     position: relative;
     margin: auto;
     width: 100%;
+    height: 100vh;
     z-index: 1;
 
 }
@@ -974,7 +1001,9 @@ footer{
     
     .main-heading{
         position: relative;
-        font-family: "maagkramp", "Century Gothic" ,Arial, Helvetica, sans-serif;
+        font-family: 'introrustg-base2line',"maagkramp", "Century Gothic" ,Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        font-style: normal;
         font-size: 80px;
         color: #ffffff;
         margin: auto;
@@ -993,7 +1022,7 @@ footer{
         position: relative;
         font-family:"Century Gothic", Arial, Helvetica, sans-serif;
         font-size: 16px;
-        font-weight:500;
+        font-weight: lighter;
         letter-spacing: 8px;
         word-spacing: 10px;
         color: #1b1b1b;
@@ -1145,8 +1174,8 @@ footer{
         overflow-y: scroll;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 0px;
-        background-color: #b32222;
-        border: #f8f8f8 5px solid;
+        background-color: #000000d0;
+        border: #f8f8f8 3px solid;
         padding: 8px;
         border-radius: 10px;
         height: 50% ;
@@ -1271,8 +1300,8 @@ footer{
             }
     
     form input{
-        border: solid silver 2px;
-        border-radius: 5px;
+        border: solid silver 1px;
+        border-radius: 2px;
         outline: none;
         padding: 2px 10px;
         margin-bottom: 18px;
@@ -1316,6 +1345,8 @@ footer{
     position: relative;
     margin: auto;
     width: 100%;
+    height: 120vh;
+    clip-path: polygon(0 0, 0 100%, 100% 100vh, 100% 0);
     z-index: 1;
 }
 
@@ -1352,9 +1383,10 @@ footer{
     
     .main-heading{
         position: relative;
-        font-family: "maagkramp", "Century Gothic" ,Arial, Helvetica, sans-serif;
+        font-family: 'introrustg-base2line',"maagkramp", "Century Gothic" ,Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        font-style: normal;
         font-size: 30px;
-        font-weight: 100;
         color: #ffffff;
         margin: auto;
         text-align: center;
@@ -1379,7 +1411,7 @@ footer{
         top: 35px;
         font-family:"Century Gothic", Arial, Helvetica, sans-serif;
         font-size: 14px;
-        font-weight:500;
+        font-weight: lighter;
         letter-spacing: 2px;
         word-spacing: 8px;
         color: #1b1b1b;
@@ -1552,8 +1584,8 @@ padding: 0 20px;
     display: grid;
     overflow-y: scroll;
     grid-template-columns: repeat(1, 1fr);
-    background-color: #000000;
-    border: #f8f8f8 5px solid;
+    background-color: #000000d8;
+    border: #f8f8f8 3px solid;
     padding: 0px 2px;
     border-radius: 10px;
     width: 95%;
@@ -1689,8 +1721,8 @@ padding: 0 20px;
             }
     
     form input{
-        border: solid silver 2px;
-        border-radius: 5px;
+        border: solid silver 1px;
+        border-radius: 2px;
         outline: none;
         padding: 2px 10px;
         margin-bottom: 18px;
@@ -1721,9 +1753,9 @@ padding: 0 20px;
         position: relative;
         width: 100%;
         height: 88vh;
+        clip-path: polygon(0 0, 0 100%, 100% 70vh, 100% 0);
         background-size: cover;
         background-position: top;
-        clip-path: polygon(0 0, 0 100%, 100% 70vh, 100% 0);
     } */
 
     #profile-picture{
@@ -1736,6 +1768,7 @@ padding: 0 20px;
     position: relative;
     margin: auto;
     width: 100%;
+    height: 105vh;
     background-image: linear-gradient(to right bottom,#ff0000ab, #e94c0e9d),url(../img/pic-33.jpg);
 z-index: 1;
 }
@@ -1745,7 +1778,7 @@ z-index: 1;
     margin: auto;
     text-align: center;
     width: 100%;
-    top: 100px;
+    top: 90px;
     }
 
     h1{
@@ -1760,8 +1793,12 @@ z-index: 1;
     
     .main-heading{
         position: relative;
-        font-family: "maagkramp", "Century Gothic" ,Arial, Helvetica, sans-serif;
-        font-size: 35px;
+        font-family: 'introrustg-base2line',"maagkramp", "Century Gothic" ,Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 25px;
+        font-weight: normal;
+        font-style: normal;
         color: #ffffff;
         margin: auto;
         text-align: center;
@@ -1779,7 +1816,7 @@ z-index: 1;
         position: relative;
         font-family:"Century Gothic", Arial, Helvetica, sans-serif;
         font-size: 17px;
-        font-weight:500;
+        font-weight: lighter;
         letter-spacing: 8px;
         word-spacing: 10px;
         color: #000000;
@@ -1955,8 +1992,8 @@ z-index: 1;
         display: grid;
         overflow-y: scroll;
         grid-template-columns: repeat(1, 1fr);
-        background-color: #000000;
-        border: #f8f8f8 5px solid;
+        background-color: #000000d8;
+        border: #f8f8f8 3px solid;
         padding: 5px 2px;
         border-radius: 10px;
         width: 95%;
@@ -2113,8 +2150,8 @@ z-index: 1;
 }
     
     form input{
-        border: solid silver 2px;
-        border-radius: 5px;
+        border: solid silver 1px;
+        border-radius: 2px;
         outline: none;
         padding: 2px 10px;
         margin-bottom: 18px;
@@ -2161,7 +2198,10 @@ z-index: 1;
     }
 
 .main-heading{
-    font-size: 40px;
+    font-family: 'introrustg-base2line',"maagkramp", "Century Gothic" ,Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 35px;
 }
 
 .about-box{
@@ -2174,8 +2214,8 @@ z-index: 1;
     display: grid;
     overflow-y: scroll;
     grid-template-columns: repeat(1, 1fr);
-    background-color: #000000;
-    border: #f8f8f8 5px solid;
+    background-color: #000000d8;
+    border: #f8f8f8 3px solid;
     padding: 40px 2px;
     border-radius: 10px;
     width: 95%;
@@ -2234,8 +2274,8 @@ z-index: 1;
         display: grid;
         overflow-y: scroll;
         grid-template-columns: repeat(1, 1fr);
-        background-color: #000000;
-        border: #f8f8f8 5px solid;
+        background-color: #000000d8;
+        border: #f8f8f8 4px solid;
         padding: 5px 2px;
         border-radius: 10px;
         width: 95%;
@@ -2280,8 +2320,8 @@ z-index: 1;
         display: grid;
         overflow-y: scroll;
         grid-template-columns: repeat(1, 1fr);
-        background-color: #000000;
-        border: #f8f8f8 5px solid;
+        background-color: #000000d8;
+        border: #f8f8f8 3px solid;
         padding: 0px 10px;
         border-radius: 10px;
         width: 95%;
@@ -2341,7 +2381,7 @@ z-index: 1;
     .heading{
         display: block;
         position: absolute;
-        top: 240px;
+        top: 200px;
         width: 100%;
         margin: auto;
         text-align: center;
@@ -2355,7 +2395,9 @@ z-index: 1;
     
     .main-heading{
         position: relative;
-        font-family: "maagkramp", "Century Gothic" ,Arial, Helvetica, sans-serif;
+        font-family: 'introrustg-base2line',"maagkramp", "Century Gothic" ,Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        font-style: normal;
         font-size: 50px;
         color: #ffffff;
         margin: auto;
@@ -2375,7 +2417,7 @@ z-index: 1;
         top: 35px;
         font-family:"Century Gothic", Arial, Helvetica, sans-serif;
         font-size: 18px;
-        font-weight:500;
+        font-weight: lighter;
         letter-spacing: 10px;
         word-spacing: 15px;
         color: #000000;
@@ -2523,8 +2565,8 @@ z-index: 1;
         overflow-y: scroll;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
-        background-color: #000000;
-        border: #f8f8f8 5px solid;
+        background-color: #000000d8;
+        border: #f8f8f8 3px solid;
         padding: 30px;
         border-radius: 10px;
         margin: auto;
@@ -2648,8 +2690,8 @@ z-index: 1;
             }
    
     form input{
-        border: solid silver 2px;
-        border-radius: 5px;
+        border: solid silver 1px;
+        border-radius: 2px;
         outline: none;
         padding: 2px 10px;
         margin-bottom: 18px;
@@ -2706,7 +2748,7 @@ z-index: 1;
     .heading{
         display: block;
         position: absolute;
-        top: 120px;
+        top: 90px;
         width: 100%;
         margin: auto;
         text-align: center;
@@ -2721,7 +2763,9 @@ z-index: 1;
     
     .main-heading{
         position: relative;
-        font-family: "maagkramp", "Century Gothic" ,Arial, Helvetica, sans-serif;
+        font-family: 'introrustg-base2line',"maagkramp", "Century Gothic" ,Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        font-style: normal;
         font-size: 50px;
         color: #ffffff;
         margin: auto;
@@ -2741,7 +2785,7 @@ z-index: 1;
         top: 35px;
         font-family:"Century Gothic", Arial, Helvetica, sans-serif;
         font-size: 17px;
-        font-weight:500;
+        font-weight: lighter;
         letter-spacing: 10px;
         word-spacing: 15px;
         color: #050505;
@@ -2891,8 +2935,8 @@ z-index: 1;
         display: grid;
         overflow-y: scroll;
         grid-template-columns: repeat(2, 1fr);
-        background-color: #000000;
-        border: #f8f8f8 5px solid;
+        background-color: #000000d8;
+        border: #f8f8f8 3px solid;
         padding: 40px 2px;
         border-radius: 10px;
         width: 95%;
@@ -3029,8 +3073,8 @@ z-index: 1;
             }
     
     form input{
-        border: solid silver 2px;
-        border-radius: 5px;
+        border: solid silver 1px;
+        border-radius: 2px;
         outline: none;
         padding: 2px 10px;
         margin-bottom: 18px;
@@ -3089,6 +3133,9 @@ z-index: 1;
 
 
     .main-heading{
+        font-family: 'introrustg-base2line',"maagkramp", "Century Gothic" ,Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        font-style: normal;
         text-align: center;
         animation-name: dashMotion;
         animation-duration: 2s;
@@ -3126,7 +3173,9 @@ z-index: 1;
     
     .main-heading{
         position: relative;
-        font-family: "maagkramp", "Century Gothic" ,Arial, Helvetica, sans-serif;
+        font-family: 'introrustg-base2line',"maagkramp", "Century Gothic" ,Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        font-style: normal;
         font-size: 50px;
         color: #ffffff;
         margin: auto;
@@ -3146,7 +3195,7 @@ z-index: 1;
         top: 35px;
         font-family:"Century Gothic", Arial, Helvetica, sans-serif;
         font-size: 17px;
-        font-weight:500;
+        font-weight: lighter;
         letter-spacing: 10px;
         word-spacing: 15px;
         color: #000000;
@@ -3308,8 +3357,8 @@ z-index: 1;
         overflow-y: scroll;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
-        background-color: #000000;
-        border: #f8f8f8 5px solid;
+        background-color: #000000d8;
+        border: #f8f8f8 3px solid;
         padding: 40px;
         border-radius: 10px;
         margin: auto;
@@ -3433,8 +3482,8 @@ z-index: 1;
             }
     
     form input{
-        border: solid silver 2px;
-        border-radius: 5px;
+        border: solid silver 1px;
+        border-radius: 2px;
         outline: none;
         padding: 2px 10px;
         margin-bottom: 18px;
@@ -3479,6 +3528,9 @@ z-index: 1;
 
 
     .main-heading{
+        font-family: 'introrustg-base2line',"maagkramp", "Century Gothic" ,Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        font-style: normal;
         text-align: center;
         animation-name: dashMotion;
         animation-duration: 2s;
@@ -3517,7 +3569,9 @@ z-index: 1;
     
     .main-heading{
         position: relative;
-        font-family: "maagkramp", "Century Gothic" ,Arial, Helvetica, sans-serif;
+        font-family: 'introrustg-base2line',"maagkramp", "Century Gothic" ,Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        font-style: normal;
         font-size: 50px;
         color: #ffffff;
         margin: auto;
@@ -3538,7 +3592,7 @@ z-index: 1;
         top: 35px;
         font-family:"Century Gothic", Arial, Helvetica, sans-serif;
         font-size: 17px;
-        font-weight:500;
+        font-weight: lighter;
         letter-spacing: 10px;
         word-spacing: 15px;
         color: #000000;
@@ -3707,8 +3761,8 @@ z-index: 1;
         overflow-y: scroll;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
-        background-color: #000000;
-        border: #f8f8f8 5px solid;
+        background-color: #000000d8;
+        border: #f8f8f8 3px solid;
         padding: 40px;
         border-radius: 10px;
         margin: auto;
@@ -3834,8 +3888,8 @@ z-index: 1;
 
     
     form input{
-        border: solid silver 2px;
-        border-radius: 5px;
+        border: solid silver 1px;
+        border-radius: 2px;
         outline: none;
         padding: 2px 10px;
         margin-bottom: 18px;
@@ -3879,6 +3933,9 @@ z-index: 1;
 
 
     .main-heading{
+        font-family: 'introrustg-base2line',"maagkramp", "Century Gothic" ,Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        font-style: normal;
         text-align: center;
         animation-name: dashMotion;
         animation-duration: 2s;
@@ -4111,8 +4168,8 @@ z-index: 1;
         overflow-y: scroll;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 0px;
-        background-color: #000000;
-        border: #f8f8f8 5px solid;
+        background-color: #000000d8;
+        border: #f8f8f8 3px solid;
         padding: 40px;
         border-radius: 10px;
         margin: auto;
@@ -4168,23 +4225,7 @@ z-index: 1;
         margin: auto;
     }
     
-    .form{
-        padding: 20px;
-        width: 70%;
-        color: white;
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-    }
 
-    .form-item{
-        /* flex-basis: 250px; */
-        flex-grow: 1;
-       
-        width: 100%;
-        font-size: 20px;
- 
-     }
  
      #fullname{
          flex-grow: 1;
@@ -4241,8 +4282,8 @@ z-index: 1;
 
     
     form input{
-        border: solid silver 2px;
-        border-radius: 5px;
+        border: solid silver 1px;
+        border-radius: 2px;
         outline: none;
         padding: 2px 10px;
         margin-bottom: 18px;
