@@ -49,7 +49,7 @@ body{
     /* flex-flow: column; */
     justify-content: center;
      margin: auto;
-    z-index: 12;
+    z-index: 1002;
 
 }
 
@@ -354,7 +354,7 @@ li a.list-desk{
     position: fixed;
     top: 20px;
     left: 100px;
-    font-family: 'Ubuntu','Josefin Sans', Arial, Helvetica, sans-serif;
+    font-family: 'Fredoka One','Josefin Sans', Arial, Helvetica, sans-serif;
     font-size: 28px;
     font-weight: 100;
     margin: auto;
@@ -456,7 +456,17 @@ section{
 }
 
 .icons{
-    color: #16a104;
+    font-size: 35px;
+    color: #000000;
+    
+    
+}
+
+.icons-2{
+    color: #28328d;
+}
+.icons-3{
+    color: #001aff;
 }
 
 .about-box{
@@ -627,7 +637,7 @@ box-shadow: 0px 0px 15px white;
     top: 0;
     left: 0;
     width: 98.7vw;
-    height: 100%;
+    height: 98%;
     justify-content: center;
     align-items: center;
     z-index: 121;
@@ -667,7 +677,7 @@ box-shadow: 0px 0px 15px white;
     top: 0;
     left: 0;
     width: 98.7vw;
-    height: 100%;
+    height: 97%;
     justify-content: center;
     align-items: center;
     z-index: 121;
@@ -693,7 +703,7 @@ box-shadow: 0px 0px 15px white;
     top: 0;
     left: 0;
     width: 98.7vw;
-    height: 100%;
+    height: 90%;
     justify-content: center;
     align-items: center;
     z-index: 121;
@@ -744,6 +754,10 @@ box-shadow: 0px 0px 15px white;
     width: 95%;
     height: 80%;
     z-index: 1;
+}
+
+.content-one{
+    height: 1%;
 }
 
 @keyframes popMotion {
@@ -1188,7 +1202,7 @@ footer{
     }
 
     .projects-modal-0{
-        height: 100%;
+        height: 90%;
     }
     
     .pop-box{
@@ -1381,7 +1395,7 @@ footer{
 .dotters{
     padding: 2px;
     width: 100%;
-    z-index: 12;
+    z-index: 1002;
 }
 
     .heading{
@@ -1599,7 +1613,7 @@ padding: 0 20px;
 
 
 .projects-modal-0{
-    height: 100%;
+    height: 90%;
 }
 
 .pop-box{
@@ -2004,7 +2018,7 @@ z-index: 1;
     .projects-modal-0{
         display: none;
         grid-template-columns: repeat(1, 1fr);
-        height: 100%;
+        height: 90%;
         width: 100%;
 
     }
@@ -2045,7 +2059,7 @@ z-index: 1;
         display: block;
         top:10px;
         width: 95%;
-        height: 60%;
+        height: 80%;
         z-index: 1;
         margin: auto;
     
@@ -2213,6 +2227,7 @@ z-index: 1;
 
 @media screen and (min-width: 480px){
 
+    
     #profile-picture{
         width: 300px;
         height: 300px;
@@ -2282,6 +2297,9 @@ z-index: 1;
 }
 
 @media screen and (max-width: 600px){
+    .content-one{
+        height: 89%;
+    }
     /* .close-icon{
         position: absolute;
         top: 215px;
@@ -2745,7 +2763,9 @@ z-index: 1;
 }
 /* Tablets, iPads (portrait) ---------- */
 @media screen and (min-width: 768px){
-
+    .content-one{
+        height: 80%;
+    }
     .main-heading{
         text-align: center;
         animation-name: dashMotion;
@@ -3133,15 +3153,31 @@ z-index: 1;
     .list{
         display: none;
     }
-
+    .content-img{
+        height: 80%;
+    }
+    
 }
 
 @media screen and (min-width: 921px){
     .menu-bar{
         display: none;
     }
-   
 
+}
+
+@media screen and (min-width: 930px){
+
+    .content-img{
+        height: 80%;
+    }
+    .content-text{
+        height: 80%;
+    }
+    .content-one{
+        padding: 0px;
+        margin-bottom: 40px;
+    }
 }
 
 /* Tablets, iPads (landscape) ---------- */
@@ -4340,5 +4376,8 @@ z-index: 1;
         top: 200px;
     }
 
-}
+    .content-one{
+        height: 1%;
+    }
+
 }
