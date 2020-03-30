@@ -55,7 +55,7 @@ body{
     width: 195px;
     height: 35px;
     position: fixed;
-    bottom: 85px;
+    bottom: 40px;
     right: 10px;
     z-index: 30009999900;
 }
@@ -75,7 +75,7 @@ body{
     color: #ffffff;
     position: fixed;
     text-align: center;
-    top: 10px;
+    top: 5px;
     right: 25px;
     border: #b8b8b8 solid 1px;
     /* border-radius: 100px; */
