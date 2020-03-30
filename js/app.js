@@ -148,3 +148,7 @@ function scrollAppear() {
 }
 
 window.addEventListener('scroll',scrollAppear);
+
+
+
+$('.scrollspy').scrollSpy();

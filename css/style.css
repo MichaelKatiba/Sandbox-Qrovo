@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One|Josefin+Sans:300,400|Montserrat|Poppins:300|Ubuntu&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Baloo+Thambi+2|Bungee+Inline|Courgette|Fredoka+One|Fugaz+One|Josefin+Sans|Kaushan+Script|Merienda+One|Monoton|Muli|Open+Sans|PT+Sans|Patrick+Hand|Permanent+Marker|Satisfy|Spartan|Special+Elite|Titan+One&display=swap');
 
 /* font-family: 'Montserrat', ;
 font-family: 'Poppins', ;
@@ -37,7 +37,7 @@ body{
     height: 100%;
     padding: 0;
     font-family: "Century Gothic", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #dbdada;
+    background: url(../img/Endless-Constellation.svg);/* background by SVGBackgrounds.com */
     font-size: 18px;
     
 
@@ -46,11 +46,140 @@ body{
 @font-face {
     font-family: 'introrustg-base2line';
     src: url('introrustg-base2line-webfont.woff2') format('woff2'),
-         url('introrustg-base2line-webfont.woff') format('woff');
+    url('introrustg-base2line-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+.ko-fi-btn{
+    width: 195px;
+    height: 35px;
+    position: fixed;
+    bottom: 85px;
+    right: 10px;
+    z-index: 30009999900;
+}
+
+
+.menu-bar{
+    display: block;
+    font-size: 37px;
+    font-weight: bolder;
+    text-decoration: none;
+    /* background-image: linear-gradient(to right bottom, #f74701, #e206ff); */
+    /* background-image: linear-gradient(to right bottom, #f70101a2,#ff4006d0);  */
+    background: #ff4006;
+    /* background-color: #00e025; */
+    /* width: 50px; */
+    /* height: 50px; */
+    color: #ffffff;
+    position: fixed;
+    text-align: center;
+    top: 10px;
+    right: 25px;
+    border: #b8b8b8 solid 1px;
+    /* border-radius: 100px; */
+    cursor: pointer;
+    z-index: 290006;
+}
+
+.menu-bar:hover{
+    /* background: #ff4006; */
+    background-color: #00e025;
+    transition: all 500ms ease;
 
 }
+
+nav{
+    position: fixed;
+    /* background-color: #000; */
+    z-index: 3;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+
+li a.list-desk{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Josefin Sans", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    /* font-size: 13px; */
+    /* list-style: none; */
+    /* padding: 0px 20px; */
+    /* background-color: rgb(41, 40, 40); */
+    /* padding: 0; */
+    /* margin: auto; */
+    border: none;
+ 
+ 
+ 
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .sub-main {
+    font-size: 4.2rem;
+    line-height: 110%;
+    margin: 0px;
+}
+
+
+.abouts-head{
+    font-size: 25px;
+}
+
+.about-box{
+    padding: 0px;
+    margin: auto;
+}
+
+.primary-btn{
+    color: #00fd2a;
+}
+
+
+
+
+
+
+
+
 
 .dotters{
     display: flex;
@@ -95,46 +224,18 @@ top: 0px;
 }
 
 .about-article{
-    background-image: linear-gradient(to right bottom, #f78401, #c40aca ); 
+    background-image: linear-gradient(to right bottom, #f70101a2,#ff4006d0); 
+    /* background: url(../img/Sun-Tornado.svg)no-repeat; background by SVGBackgrounds.com */
+    background-size: cover;
     padding: 25px 25px 50px 25px; 
     border-radius: 5px; 
-    box-shadow: 3px 13px 18px #6e6e6e; 
-    color: #fff;
+    box-shadow: 3px 10px 20px #6e6e6e; 
+    color: #000000;
     margin: 0px;
+    line-height: 25px;
+    letter-spacing: 0.7px;
 }
 
-.skills-list{
-    list-style: none; 
-    border: #0000005d 1px solid;
-    border-radius: 200px;
-    background: #0000006b;
-    padding: 5px;
-    margin: 2px 0px;
-    cursor: pointer;
-}
-
-.skills-link:hover{
-    color: #fff;
-}
-
-.skills-list:hover{
-animation: skillsList;
-animation-duration: 1s;
-/* transition: all 3s; */
-}
-
-
-
-@keyframes skillsList{
-0%{
-   
-}
-
-100%{
-    transform: scale(1.02);
-    background: #0000008a;
-}
-}
 
 .projects-head{
 top: 1560px;
@@ -230,50 +331,89 @@ font-size: 25px;
 nav ul li{
     display: block;
     list-style: none;
-    margin-top: 15px;
+    /* margin-top: 15px; */
+}
+
+.mob-list{
+    display: block;
+    width: 100%;
 }
 
 
-nav ul li .list-item{
+nav ul li a.list-item{
     font-family: 'Century Gothic','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans','Josefin Sans', Arial, sans-serif;
     font-family: 18px;
     letter-spacing: 2px;
     text-decoration: none;
     color: #ffffff;
     text-align: center;
-    padding: 10px 40px;
-    margin: auto;
+    /* padding: 10px 30px; */
+    /* margin: 0 auto; */
+    /* border-radius: 50px; */
+
     
 }
 
-.list-item:hover{    
-background: #04000e;
-width: fit-content;
-height: fit-content;
-line-height: -2px;
-margin-left: 0px;
-border-radius: 50px;
-transition: all ease-out 1/4s;
+nav ul a {
+    /* padding: 0px; */
 }
 
 
+h6{
+    color: rgb(214, 214, 214);
+    font-size: 20px;
+    font-weight: 600;
+/* font-family: 'Merienda One', cursive; */
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Baloo Thambi 2', cursive; */
+/* font-family: 'PT Sans', sans-serif; */
+/* font-family: 'Muli', sans-serif; */
+/* font-family: 'Josefin Sans', sans-serif; */
+/* font-family: 'Titan One', cursive; */
+/* font-family: 'Fredoka One', cursive; */
+/* font-family: 'Permanent Marker', cursive; */
+font-family: 'Special Elite', cursive;
+/* font-family: 'Patrick Hand', cursive; */
+/* font-family: 'Satisfy', cursive; */
+/* font-family: 'Courgette', cursive; */
+/* font-family: 'Kaushan Script', cursive; */
+/* font-family: 'Spartan', sans-serif; */
+/* font-family: 'Monoton', cursive; */
+/* font-family: 'Fugaz One', cursive; */
+/* font-family: 'Bungee Inline', cursive */
+}
+/* .list-item:hover{    
+background: #00fd2a;
+width: fit-content;
+height: fit-content;
+/* line-height: -2px; 
+margin-left: 0px;
+border-radius: 50px;
+transition: all ease 1s;
+} */
+
+
 .nav-box{
-    margin: auto;
+    /* margin: auto; */
     background-color: unset;
     width: 100%;
     height: 75px;
     position: fixed;
-    /* left: -47440px; */
+    left: -47440px;
     z-index: 22;
 
 }
 
 .nav-toggle-slide{
    display: block;
-   background-image: linear-gradient(to right bottom, #f78401, #8b03ad);
+   /* background-image: linear-gradient(to right bottom, #f78401, #8b03ad); */
+   /* background-image: linear-gradient(to right bottom, #f70101e1,#ff4006);  */
+   background: url(../img/Sun-Tornado.svg)no-repeat;/* background by SVGBackgrounds.com */
+   background-size: cover;
+
    width: 100vw;
-    height: 100vh;
-   position: absolute;
+   height: 100vh;
+   position: relative;
    top: 0;
    /* left: -500px; */
    z-index: 2;
@@ -282,31 +422,15 @@ transition: all ease-out 1/4s;
 
 .nav-toggle-slide li{
     display: block;
-    padding: 20px 0px 20px 40px;
-text-align: center;
+    padding: 20px 0px 20px 20px;
+    text-align: center;
+    margin: auto;
 
 }
 
 .nav-toggle-slide li:first-child{
     margin-top: 100px;
 
-}
-
-.menu-bar{
-    display: block;
-    font-size: xx-large;
-    text-decoration: none;
-    background-image: linear-gradient(to right bottom, #f74701, #e206ff);
-    width: 50px;
-    height: 50px;
-    color: #ffffff;
-    position: fixed;
-    text-align: right;
-    top: 7px;
-    right: 25px;
-    padding: 2px 40px 6px 10px;
-    border-radius: 100px;
-    z-index: 1006;
 }
 
 
@@ -323,35 +447,16 @@ text-align: center;
 
 }
 
-li a.list-desk{
-   display: inline-block;
-   color: #ffffff;
-   text-decoration: none;
-   text-transform: uppercase;
-   font-family: "Josefin Sans", Verdana, Geneva, Tahoma, sans-serif;
-   font-weight: 500;
-   font-size: 13px;
-   list-style: none;
-   padding: 0px 20px;
-   background-color: rgb(41, 40, 40);
-   padding: 9px 19px 4px;
-   margin: 0 10px;
-   border: none;
-   border-radius: 500px;
-
-
-
-}
 
 .list .list-desk:hover{
     /* background-color: rgb(206, 71, 71); */
-    background-image: linear-gradient(to right bottom,#fa3a3a, #ff5b1b9d);
+    /* background-image: linear-gradient(to right bottom,#fa3a3a, #ff5b1b9d); */
 
 }
 
 .logo{
     width: 50px;
-    height: 50px;
+    height: 40px;
     position: fixed;
     left: 30px;
     top: 10px;
@@ -489,6 +594,31 @@ section{
     transition: all 0.8s ease-in-out;
 }
 
+#guarantee{
+/* font-family: 'Merienda One', cursive; */
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Baloo Thambi 2', cursive; */
+/* font-family: 'PT Sans', sans-serif; */
+/* font-family: 'Muli', sans-serif; */
+/* font-family: 'Josefin Sans', sans-serif; */
+/* font-family: 'Titan One', cursive; */
+/* font-family: 'Fredoka One', cursive; */
+font-family: 'Permanent Marker', cursive;
+/* font-family: 'Special Elite', cursive; */
+/* font-family: 'Patrick Hand', cursive; */
+/* font-family: 'Satisfy', cursive; */
+/* font-family: 'Courgette', cursive; */
+/* font-family: 'Kaushan Script', cursive; */
+/* font-family: 'Spartan', sans-serif; */
+/* font-family: 'Monoton', cursive; */
+/* font-family: 'Fugaz One', cursive; */
+/* font-family: 'Bungee Inline', cursive */
+color: #f8f8f8;
+background: #00fd2aad;
+padding: 2px;
+line-height: 25px;
+}
+
 .intro-appear{
     opacity: 1;
     transform: translateY(0px);
@@ -575,11 +705,17 @@ section{
 
 }
 
+h5{
+    font-size: 11px;
+}
+
 .dots h5{
     text-transform: uppercase;
     color: #fff;
     letter-spacing: 5px;
     text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
 }
 
 .box-2{
@@ -589,7 +725,8 @@ section{
     width: 100px;
     height: 30px;
     border-radius: 4px;
-    background-image: linear-gradient(to right bottom, #f78401, #c40aca);
+    /* background-image: linear-gradient(to right bottom, #f78401, #c40aca); */
+    background: #00fd2aad;
     text-align: center;
     z-index: 1;
 
@@ -750,7 +887,12 @@ box-shadow: 0px 0px 15px white;
     color: #ffffff;
     z-index: 22;
     font-size: inherit;
-    background-image: linear-gradient(to right bottom, #f78401, #c40aca);
+    /* background-image: linear-gradient(to right bottom, #f78401, #c40aca); */
+    /* background-image: linear-gradient(to bottom, #00970d, #00ff15);  */
+    background-image: linear-gradient(to right bottom, #ff533c,#ff4006); 
+    background-size: cover;
+
+
     height: fit-content;
     padding: 10px 10px 13px 30px;
     border-radius: 2px;
@@ -800,7 +942,9 @@ box-shadow: 0px 0px 15px white;
     top: -20px;
     font-family: 'Century Gothic', sans-serif;
     font-weight: bold;
-    background-image: linear-gradient(to right bottom, #f78401, #c40aca);
+    /* background-image: linear-gradient(to right bottom, #f78401, #c40aca); */
+    background-image: linear-gradient(to right bottom, #f71e01,#ff3806); 
+
     color: #ffffff; 
     display: block;
     border: #f8f8f8 5px solid;
@@ -808,6 +952,7 @@ box-shadow: 0px 0px 15px white;
 }
 
 .contact-box{
+    background: url(../img/Sun-Tornado.svg);/* background by SVGBackgrounds.com */
     background-size: cover;
     background-position: center;
     margin: auto;
@@ -880,19 +1025,6 @@ box-shadow: 0px 0px 15px white;
      flex-grow: 1;
      }
 
-    .submit-btn{
-        display: block;
-        width: 100%;
-        height: 30px;
-        background-color: #16a104;
-        border: none;
-        outline: none;
-        border-radius: 5px;
-        margin: auto;
-        text-transform: uppercase;
-        color: #dbdada;
-        }
-
 
 form input{
     border: solid rgb(255, 255, 255) 1px;
@@ -961,14 +1093,7 @@ form input{
      }
 
 .submit-btn{
-display: block;
-width: 100%;
-height: 30px;
-background-color: #16a104;
-border-radius: 5px;
-margin: auto;
-text-transform: uppercase;
-color: #dbdada;
+background-color: #00cc22;
 }
 
 select{
@@ -986,7 +1111,7 @@ footer{
 }
 
 .footer-info{
-    padding:40px 5px 40px 5px;
+    padding:0px 5px 20px 5px;
     margin: auto;
     width: 75%;
 }
@@ -1167,7 +1292,7 @@ footer{
         left: 5px;
         height: 30px;
         border-radius: 4px;
-        background-image: linear-gradient(to right bottom, #f78401, #c40aca);
+        /* background-image: linear-gradient(to right bottom, #f78401, #c40aca); */
         text-align: center;
         z-index: 1;
         margin: auto;
@@ -1234,14 +1359,14 @@ footer{
         color: #ffffff;
         z-index: 22;
         font-size: inherit;
-        background-image: linear-gradient(to right bottom, #f78401, #c40aca);
+        /* background-image: linear-gradient(to right bottom, #f78401, #c40aca); */
         height: fit-content;
         padding: 10px 10px 13px 30px;
         border-radius: 2px;
     }
     
     .content-img{
-        position: relative;
+        /* position: relative; */
         top: 20px;
         width: 95%;
         height: 80%;
@@ -1257,7 +1382,7 @@ footer{
 
     .contact-box{
         position: relative;
-        /* background: url(../img/pic-16.png); */
+        background: url(../img/Sun-Tornado.svg);/* background by SVGBackgrounds.com */
         background-size: cover;
         background-position: center;
         top: 100px;
@@ -1332,17 +1457,6 @@ footer{
          flex-grow: 1;
          }
 
-        .submit-btn{
-            display: block;
-            width: 100%;
-            height: 30px;
-            background-color: #16a104;
-            border-radius: 5px;
-            margin: auto;
-            text-transform: uppercase;
-            color: #dbdada;
-            }
-    
     form input{
         border: solid silver 1px;
         border-radius: 2px;
@@ -1561,7 +1675,7 @@ padding: 0 20px;
         height: 30px;
         width: 110px;
         border-radius: 4px;
-        background-image: linear-gradient(to right bottom, #f78401, #c40aca);
+        /* background-image: linear-gradient(to right bottom, #f78401, #c40aca); */
         text-align: center;
         z-index: 1;
         margin: auto;
@@ -1646,7 +1760,7 @@ padding: 0 20px;
     color: #ffffff;
     z-index: 22;
     font-size: 17px;
-    background-image: linear-gradient(to right bottom, #f78401, #c40aca);
+    /* background-image: linear-gradient(to right bottom, #f78401, #c40aca); */
     height: fit-content;
     width: 95%;
     padding: 10px 10px 13px 20px;
@@ -1654,7 +1768,7 @@ padding: 0 20px;
 }
 
 .content-img{
-    position: relative;
+    /* position: relative; */
     display: block;
     top: 0px;
     width: 95%;
@@ -1680,7 +1794,7 @@ padding: 0 20px;
 
     .contact-box{
         position: relative;
-        background: url(../img/pic-31.jpg);
+        background: url(../img/Sun-Tornado.svg);/* background by SVGBackgrounds.com */
         background-size: cover;
         background-position: center;
         top: 0px;
@@ -1693,7 +1807,7 @@ padding: 0 20px;
         width: 90%;
         font-size: 16px;
         /* margin: 40px 40px 0 0px; */
-        background-image: linear-gradient(to right bottom, #ff5f03, #ff009d);
+        background-image: linear-gradient(to right bottom, #f70101a2,#ff4006d0); 
         padding: 4px;
         color: #ffffff;
         /* text-shadow: #fbfff8 2px 2px 10px; */
@@ -1771,16 +1885,6 @@ padding: 0 20px;
          flex-grow: 1;
          }
 
-        .submit-btn{
-            display: block;
-            width: 100%;
-            height: 30px;
-            background-color: #16a104;
-            border-radius: 5px;
-            margin: auto;
-            text-transform: uppercase;
-            color: #dbdada;
-            }
     
     form input{
         border: solid silver 1px;
@@ -1987,7 +2091,7 @@ z-index: 1;
         height: 40px;
         width: 150px;
         border-radius: 4px;
-        background-image: linear-gradient(to right bottom, #f78401, #c40aca);
+        /* background-image: linear-gradient(to right bottom, #f78401, #c40aca); */
         text-align: center;
         z-index: 1;
         margin: auto;
@@ -2073,7 +2177,7 @@ z-index: 1;
         color: #ffffff;
         z-index: 22;
         font-size: inherit;
-        background-image: linear-gradient(to right bottom, #f78401, #c40aca);
+        /* background-image: linear-gradient(to right bottom, #f78401, #c40aca); */
         height: fit-content;
         width: 95%;
         padding: 10px 10px 13px 30px;
@@ -2081,8 +2185,9 @@ z-index: 1;
         margin-bottom: 10px;
     }
     
+    
     .content-img{
-        position: relative;
+        /* position: relative; */
         display: block;
         top:10px;
         width: 95%;
@@ -2115,7 +2220,7 @@ z-index: 1;
 
     .contact-box{
         position: relative;
-        background: url(../img/pic-31.jpg);
+        background: url(../img/Sun-Tornado.svg);/* background by SVGBackgrounds.com */
         background-size: cover;
         background-position: center;
         top: 200px;
@@ -2194,23 +2299,6 @@ z-index: 1;
          flex-grow: 1;
          }   
 
-        .submit-btn{
-            display: block;
-            width: 100%;
-            height: 30px;
-            background-color: #16a104;
-            border-radius: 5px;
-            margin: auto;
-            text-transform: uppercase;
-            color: #dbdada;
-            font-family: 'Josefin Sans','Century Gothic', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            font-size: 18px;
-            font-weight: bold;
-            }
-
-.submit-btn:hover{
-    background-image: linear-gradient(to right bottom, #ff5f03, #ff009d);
-}
     
     form input{
         border: solid silver 1px;
@@ -2244,7 +2332,9 @@ z-index: 1;
         width: 95%;
         font-size: 16px;
         /* margin: 40px 40px 0 0px; */
-        background-image: linear-gradient(to right bottom, #ff5f03, #ff009d);
+        /* background-image: linear-gradient(to right bottom, #ff5f03, #ff009d); */
+        background-image: linear-gradient(to right, #f7010100,#00fd2aad,#00fd2aad,#ff400600); 
+
         padding: 10px;
         color: #ffffff;
         /* text-shadow: #fbfff8 2px 2px 10px; */
@@ -2284,7 +2374,6 @@ z-index: 1;
     padding-bottom: 0px;
     top: 180px;
     padding: 10px;
-    /* background: url(../img/pic-14.png); */
 
 }
 
@@ -2293,7 +2382,6 @@ z-index: 1;
     margin: auto;
     width: 400px;
     height: 350px;
-    /* display: block; */
     margin: auto;
 }
 
@@ -2320,7 +2408,6 @@ z-index: 1;
     color: #ffffff;
     z-index: 20;
     font-size: inherit;
-    background-image: linear-gradient(to right bottom, #f78401, #c40aca);
     height: fit-content;
     width: 95%;
     padding: 10px 10px 13px 30px;
@@ -2329,7 +2416,6 @@ z-index: 1;
 }
 
 .content-img{
-    position: relative;
     display: block;
     top:10px;
     width: 95%;
@@ -2339,26 +2425,12 @@ z-index: 1;
 
 }
 
-/* .close-icon{
-    position: absolute;
-    top: 225px;
-    left: 45%;
-} */
 
 }
 
 @media screen and (max-width: 600px){
     .content-one{
         height: 89%;
-    }
-    /* .close-icon{
-        position: absolute;
-        top: 215px;
-        left: 45%;
-    }*/
-
-    .list{
-        display: none;
     }
 
     
@@ -2385,7 +2457,6 @@ z-index: 1;
         color: #ffffff;
         z-index: 20;
         font-size: inherit;
-        background-image: linear-gradient(to right bottom, #f78401, #c40aca);
         height: fit-content;
         width: 95%;
         padding: 10px 10px 13px 30px;
@@ -2394,7 +2465,7 @@ z-index: 1;
     }
     
     .content-img{
-        position: relative;
+        /* position: relative; */
         display: block;
         top:20px;
         width: 95%;
@@ -2419,7 +2490,6 @@ z-index: 1;
         padding-bottom: 0px;
         top: 180px;
         padding: 10px;
-        /* background: url(../img/pic-14.png); */
 
     }
 
@@ -2454,7 +2524,6 @@ z-index: 1;
         color: #ffffff;
         z-index: 20;
         font-size: inherit;
-        background-image: linear-gradient(to right bottom, #f78401, #c40aca);
         height: fit-content;
         width: 95%;
         padding: 10px 10px 13px 30px;
@@ -2463,7 +2532,7 @@ z-index: 1;
     }
     
     .content-img{
-        position: relative;
+        /* position: relative; */
         display: block;
         top:20px;
         width: 95%;
@@ -2581,7 +2650,6 @@ z-index: 1;
         display: block;
         top: 40px;
         margin: auto;
-        /* background-color: #f74701; */
         width: 70%;
         height: 100%;
     }
@@ -2605,8 +2673,6 @@ z-index: 1;
         width: 100%;
         left: 0px;
         margin: auto;
-        /* box-shadow: 3px 13px 8px #000000;  */
-
     }
     
     .profile{
@@ -2625,7 +2691,6 @@ z-index: 1;
         left: 5px;
         height: 30px;
         border-radius: 4px;
-        background-image: linear-gradient(to right bottom, #f78401, #c40aca);
         text-align: center;
         z-index: 1;
         margin: auto;
@@ -2707,14 +2772,14 @@ z-index: 1;
         color: #ffffff;
         z-index: 20;
         font-size: inherit;
-        background-image: linear-gradient(to right bottom, #f78401, #c40aca);
+        /* background-image: linear-gradient(to right bottom, #f78401, #c40aca); */
         height: fit-content;
         padding: 10px 10px 13px 30px;
         border-radius: 2px;
     }
     
     .content-img{
-        position: relative;
+        /* position: relative; */
         top: 20px;
         width: 80%;
         height: 80%;
@@ -2728,7 +2793,7 @@ z-index: 1;
 
     .contact-box{
         position: relative;
-        /* background: url(../img/pic-16.png); */
+        background: url(../img/Sun-Tornado.svg);/* background by SVGBackgrounds.com */
         background-size: cover;
         background-position: center;
         top: 420px;
@@ -2804,17 +2869,7 @@ z-index: 1;
          text-align: left;
          flex-grow: 1;
          }
-    
-        .submit-btn{
-            display: block;
-            width: 100%;
-            height: 30px;
-            background-color: #16a104;
-            border-radius: 5px;
-            margin: auto;
-            text-transform: uppercase;
-            color: #dbdada;
-            }
+
    
     form input{
         border: solid silver 1px;
@@ -2867,13 +2922,6 @@ z-index: 1;
     }
     
 
-    /* .header-img{
-        position: relative;
-        width: 100%;
-        height: 88vh;
-        clip-path: polygon(0 0, 0 100%, 100% 70vh, 100% 0);
-    } */
-    
     .heading{
         display: block;
         position: absolute;
@@ -2965,19 +3013,6 @@ z-index: 1;
         height: 100%;
         width: 90%;
     }
-    
-    /* .about-pic-1 {
-        position: absolute;
-        left: 80px;
-        top: 10px;
-        margin: auto;
-    }
-    
-    .about-pic-2{
-        position: relative;
-        left: 20px;
-        margin: auto;
-    } */
 
     .about-info{
         position: relative;
@@ -3008,7 +3043,7 @@ z-index: 1;
         height: 50px;
         width: 150px;
         border-radius: 4px;
-        background-image: linear-gradient(to right bottom, #f78401, #c40aca);
+        /* background-image: linear-gradient(to right bottom, #f78401, #c40aca); */
         text-align: center;
         z-index: 1;
         margin: auto;
@@ -3092,7 +3127,7 @@ z-index: 1;
         color: #ffffff;
         z-index: 20;
         font-size: inherit;
-        background-image: linear-gradient(to right bottom, #f78401, #c40aca);
+        /* background-image: linear-gradient(to right bottom, #f78401, #c40aca); */
         height: fit-content;
         width: 95%;
         padding: 10px 10px 13px 30px;
@@ -3101,7 +3136,7 @@ z-index: 1;
     }
     
     .content-img{
-        position: relative;
+        /* position: relative; */
         display: block;
         top: 40px;
         width: 95%;
@@ -3110,18 +3145,10 @@ z-index: 1;
         margin: auto;
     
     }
-    
-    /* .close-icon{
-        position: absolute;
-        top: 285px;
-        left: 50%;
-    } */
-
-
 
     .contact-box{
         position: relative;
-        /* background: url(../img/pic-16.png); */
+        background: url(../img/Sun-Tornado.svg);/* background by SVGBackgrounds.com */
         background-size: cover;
         background-position: center;
         top: 750px;
@@ -3199,17 +3226,6 @@ z-index: 1;
         flex-grow: 1;
         }
     
-
-        .submit-btn{
-            display: block;
-            width: 100%;
-            height: 30px;
-            background-color: #16a104;
-            border-radius: 5px;
-            margin: auto;
-            text-transform: uppercase;
-            color: #dbdada;
-            }
     
     form input{
         border: solid silver 1px;
@@ -3243,24 +3259,6 @@ z-index: 1;
     }
 }
 
-
-@media screen and (max-width: 920px){
-
-    .list{
-        display: none;
-    }
-    .content-img{
-        height: 80%;
-    }
-    
-}
-
-@media screen and (min-width: 921px){
-    .menu-bar{
-        display: none;
-    }
-
-}
 
 @media screen and (min-width: 930px){
 
@@ -3304,13 +3302,6 @@ z-index: 1;
         margin-top: 30px;
     }
     
-    /* .header-img{
-        position: relative;
-        width: 100%;
-        height: 88vh;
-        clip-path: polygon(0 0, 0 100%, 100% 70vh, 100% 0);
-    }
-     */
     .heading{
         display: block;
         position: absolute;
@@ -3401,8 +3392,6 @@ z-index: 1;
         display: block;
         top: 40px;
         margin: auto;
-        /* background-color: #f74701; */
-        /* height: 100%; */
     }
     
     .about-pic-1 {
@@ -3450,7 +3439,6 @@ z-index: 1;
         height: 40px;
         width: 150px;
         border-radius: 4px;
-        background-image: linear-gradient(to right bottom, #f78401, #c40aca);
         text-align: center;
         z-index: 1;
         margin: auto;
@@ -3532,32 +3520,23 @@ z-index: 1;
         color: #ffffff;
         z-index: 20;
         font-size: inherit;
-        background-image: linear-gradient(to right bottom, #f78401, #c40aca);
+        /* background-image: linear-gradient(to right bottom, #f78401, #c40aca); */
         height: fit-content;
         padding: 10px 10px 13px 30px;
         border-radius: 2px;
     }
     
     .content-img{
-        position: relative;
+        /* position: relative; */
         top: 20px;
         width: 80%;
         height: 80%;
         z-index: 1;
     }
 
-    /* .close-icon{
-        top: 310px;
-    } */
-
 
     .contact-box{
         position: relative;
-
-        /* background: url(../img/pic-16.png); */
-        /* background-size: cover;
-        background-position: center; */
-
         margin: auto;
         padding: 15px;
         width: 100%;
@@ -3630,17 +3609,6 @@ z-index: 1;
          }
     
 
-        .submit-btn{
-            display: block;
-            width: 100%;
-            height: 30px;
-            background-color: #16a104;
-            border-radius: 5px;
-            margin: auto;
-            text-transform: uppercase;
-            color: #dbdada;
-            }
-    
     form input{
         border: solid silver 1px;
         border-radius: 2px;
@@ -3674,10 +3642,6 @@ z-index: 1;
 /* Desktops and laptops ---------- */
  @media screen and (min-width: 1224px){
 
-    .menu-bar{
-        display: none;
-    }
-
     .nav-box {
         margin: auto;
         width: 100%;
@@ -3702,14 +3666,6 @@ z-index: 1;
         padding: 0 110px;
         margin-top: 30px;
     }
-    
-    /* .header-img{
-        position: relative;
-        width: 100%;
-        height: 90vh;
-    
-        clip-path: polygon(0 0, 0 100%, 100% 75vh, 100% 0);
-    } */
     
     .heading{
         display: block;
@@ -3800,27 +3756,12 @@ z-index: 1;
     
     .about-box{
         position: relative;
-        /* display: flex; */
         top: 40px;
         margin: auto;
-        /* background-color: #f74701; */
         height: 100%;
         width: 70%;
         max-height: max-content;
     }
-    
-    /* .about-pic-1 {
-        position: absolute;
-        left: 0px;
-        top: 10px;
-        margin: auto;
-    }
-    
-    .about-pic-2{
-        position: relative;
-        left: 180px;
-        margin: auto;
-    } */
 
     .about-info{
         position: relative;
@@ -3831,19 +3772,8 @@ z-index: 1;
         margin: auto;
         font-size: 16px;
         padding: 10px 20px 20px 20px;
-        /* background-color: #05ff19; */
-        /* box-shadow: 3px 13px 8px #000000;  */
         border: none;
         border-radius: 10px;
-    }
-    
-    .profile{
-        display: block;
-        width: 300px;
-        height: 300px;
-        border: linear-gradient(to right bottom, #f78401, #c40aca) solid 15px;
-        background-image: linear-gradient(to right bottom, #f78401, #c40aca) solid 15px;
-    
     }
 
     .box-2{
@@ -3854,7 +3784,6 @@ z-index: 1;
         height: 40px;
         width: 150px;
         border-radius: 4px;
-        background-image: linear-gradient(to right bottom, #f78401, #c40aca);
         text-align: center;
         z-index: 1;
         margin: auto;
@@ -3908,10 +3837,6 @@ z-index: 1;
     .img-box{
         position: relative;
         display: block;
-        /* margin: auto; */
-        /* grid-gap: 10px; */
-        /* height: 200px; */
-        /* width: 100%; */
         padding: 10px;
         /* margin-bottom: 120px; */
       
@@ -3938,23 +3863,19 @@ z-index: 1;
         color: #ffffff;
         z-index: 0;
         font-size: inherit;
-        background-image: linear-gradient(to right bottom, #f78401, #c40aca);
         height: 80%;
         padding: 10px 10px 13px 30px;
         border-radius: 2px;
     }
     
     .content-img{
-        position: relative;
+        /* position: relative; */
         top: 20px;
         width: 80%;
         height: 80%;
         z-index: 1;
     }
 
-    /* .close-icon{
-        top: 320px;
-    } */
 
     .contact-box{
         position: relative;
@@ -4037,17 +3958,6 @@ z-index: 1;
 }
     
 
-        .submit-btn{
-            display: block;
-            width: 100%;
-            height: 30px;
-            background-color: #16a104;
-            border-radius: 5px;
-            margin: auto;
-            text-transform: uppercase;
-            color: #dbdada;
-            }
-
     
     form input{
         border: solid silver 1px;
@@ -4109,18 +4019,7 @@ z-index: 1;
         padding: 0 130px;
         margin-top: 30px;
     }
-    
-    /* .header-img{
-        position: relative;
-        width: 100%;
-        height: 90vh;
-        clip-path: polygon(0 0, 0 100%, 100% 75vh, 100% 0); UNCOMMENT */
 
-         /* background-image: url(img/hdr.jpg);
-        background-size: cover;
-        background-position: top; DON'T UNCOMMENT 
-    }*/
-    
     .heading{
         display: block;
         position: absolute;
@@ -4130,44 +4029,6 @@ z-index: 1;
         text-align: center;
        
     }
-
-    /* #profile-picture{
-        width: 300px;
-        height: 300px;
-        border-radius: 500px;
-    } */
-    
-    /* .main-heading{
-        position: relative;
-        font-family: "maagkramp", "Century Gothic" ,Arial, Helvetica, sans-serif;
-        font-size: 60px;
-        font-weight: lighter;
-        color: #ffffff;
-        margin: auto;
-        text-align: center;
-        width: 100%;
-        animation-name: dashMotionHead; */
-        /* -webkit-background-clip: text;
-        background-image: linear-gradient(to right bottom, #ff5f03, #ff009d);
-        -webkit-text-fill-color: transparent;
-        -moz-text-decoration-color: transparent;
-        -moz-background-clip: text; 
-        
-    }*/
-    
-    /* .sub-heading{
-        position: relative;
-        top: 25px;
-        font-family:"Century Gothic", Arial, Helvetica, sans-serif;
-        font-size: 20px;
-        font-weight:500;
-        letter-spacing: 10px;
-        word-spacing: 15px;
-        color: #1b1b1b;
-        text-transform: uppercase;
-        text-align: center;
-
-    } */
     
     button:focus{
         outline: none;
@@ -4195,7 +4056,6 @@ z-index: 1;
         word-spacing: 2px;
         line-height: 10px;
         padding: 20px;
-        color: #4e4e4e;
         text-transform: uppercase;
     }
     
@@ -4213,7 +4073,6 @@ z-index: 1;
     .about-box{
         position: relative;
         top: 0px;
-        /* background-color: #f74701; */
         height: 100%;
         /* width: 80%; */
         max-height: max-content;
@@ -4241,19 +4100,9 @@ z-index: 1;
         margin: auto;
         font-size: 17px;
         padding: 10px 20px 20px 20px;
-        /* background-color: #05ff19; */
-        /* box-shadow: 3px 13px 8px #000000;  */
         border-radius: 10px;
     }
-    
-    .profile{
-        display: block;
-        width: 300px;
-        height: 300px;
-        border: linear-gradient(to right bottom, #f78401, #c40aca) solid 15px;
-        background-image: linear-gradient(to right bottom, #f78401, #c40aca) solid 15px;
-    
-    }
+
 
     .box-2{
         position: relative;
@@ -4263,7 +4112,6 @@ z-index: 1;
         height: 40px;
         width: 150px;
         border-radius: 4px;
-        background-image: linear-gradient(to right bottom, #f78401, #c40aca);
         text-align: center;
         z-index: 1;
         margin: auto;
@@ -4295,20 +4143,6 @@ z-index: 1;
         font-family: 'Fredoka One','Josefin Sans', Arial, Helvetica, sans-serif;  
         font-size: 25px;
        }
-
-    /* .projects-box{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        width: 75%;
-        margin-bottom: 100px;
-        height: 100%;
-        grid-gap: 10px;
-        position: relative;
-        /* background-color: #22acce; *
-        top: 250px;
-        padding: 10px;
-
-    } */
 
     .project-pic{
     height: 320px;
@@ -4346,7 +4180,6 @@ z-index: 1;
         color: #ffffff;
         z-index: 0;
         font-size: inherit;
-        background-image: linear-gradient(to right bottom, #f78401, #c40aca);
         height: 80%;
         width: 100%;
         padding: 10px 10px 13px 30px;
@@ -4354,130 +4187,16 @@ z-index: 1;
     }
     
     .content-img{
-        position: relative;
         top: 0px;
         width: 80%;
         height: 80%;
         z-index: 1;
     }
-/* 
-    .close-icon{
-        position: absolute;
-        top: 288px;
-    } */
-
 
     .contact-box{
         position: relative;
-        background: url(../img/pic-31.jpg);
         background-size: cover;
         background-position: center;
         width: 100%;
-        /*top: 240px;
-        margin: auto;
-        padding: 15px;
-        padding-bottom: 100px;
-        width: 100%;
-        text-align: left;
     }
-
-    .contact-info{
-        width: 80%;
-        font-size: 20px;
-        padding: 10px;
-        margin: auto;
-    }
-    
-
- 
-     #fullname{
-         flex-grow: 1;
-         width: 100%;
-         height: 30px;
-         border-radius: 2px;
-         border: none;
-         outline: none;
-     }
- 
-     #useremail{
-     flex-grow: 2;
-     width: 100%;
-     height: 30px;
-     border-radius: 2px;
-     border: none;
-     outline: none;
-     margin: auto;
- 
-     }
- 
-     #form-message{
-     font-size: 18px;
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
-     width: 100%;
-     height: 100px;
-     border-radius: 2px;
-     border: none;
-     outline: none;
-     /* margin: auto; */
- 
-     /* margin-left: 50px; */
-     flex-grow: 1;
-     }
-     .form-message{
-         font-size: 20px;
-         /* display: block; */
-         width: 100%;
-         text-align: left;
-         flex-grow: 1;
-}
-    
-
-        .submit-btn{
-            display: block;
-            width: 100%;
-            height: 30px;
-            background-color: #16a104;
-            border-radius: 5px;
-            margin: auto;
-            text-transform: uppercase;
-            color: #dbdada;
-            }
-
-    
-    form input{
-        border: solid silver 1px;
-        border-radius: 2px;
-        outline: none;
-        padding: 2px 10px;
-        margin-bottom: 18px;
-        font-size: 18px;
-    
-    }
-    
-    select{
-        border: solid silver 2px;
-        border-radius: 5px;
-        outline: none;
-        font-size: 18px;
-        padding: 2px 10px;
-    
-    }
-
-    .contact-note{
-        font-size: 16px;
-        width: 85%;
-        margin: auto;
-        margin-top: 10px;
-    }
-
-    footer{
-        display: block;
-        position: relative;
-        top: 200px;
-    }
-
-    .content-one{
-        height: 1%;
-    }
-
 }

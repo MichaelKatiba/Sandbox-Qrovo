@@ -4,54 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/Qrovo.png" type="image/x-icon">
-    <title>Qrovo | Michael Katiba</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>Qrovo | Web Design, Web Development & Logo Design </title>
 
-    <meta name="description" content="Michael Katiba is a self-taught Web Developer/Designer and Logo Designer. Born in Africa (Zambia), His interest for tech has lead him to some creative designs.">
-    <meta name="keywords" content="Web Design, Web Developer, Visual Artist,Freelancer, Website, Zambia, Qrovo, Qrovo Designs Mike Katiba, Michael Katiba.">
+    <meta name="description" content="Michael Katiba is a self-taught Web Developer/ Web Designer and Logo Designer.">
+    <meta name="keywords" content="Web Design, Web Developer, Visual Artist,Freelancer, Website, Zambia, Logo Designer, Qrovo, Qrovo Designs Mike Katiba, Michael Katiba.">
 
+
+ <!-- Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" href="css/introrustg_base2line_macroman/stylesheet.css">
     <script src="https://kit.fontawesome.com/2d0c1d3cb4.js"></script>
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 
-    <a href="index.html"><img src="img/Qrovo.png" class="logo" alt="logo-image">
+    <a href="index.html"><img src="img/logo.png" class="logo" alt="logo-image">
         <h1 class="logo-name">Qrovo</h1>
         </a>
+        <!-- <div onclick="menuBar()" class="menu-bar btn-large btn-floating right" id="nav-toggle">Menu</div> -->
+<ul>
+    <li class=""><div onclick="menuBar()" class="menu-bar center btn-large btn-floating  hide-on-large-only" id="nav-toggle">&#8801;</div></li>
+
+</ul>
+
+
 
     <div class="nav-box">
         <nav class = navigation>
-                <ul class="nav-toggle-slide">
-                    <!-- <li><button onclick="menuBar()" class="menu-bar" id="menu-close" id="nav-toggle"><img src="img/close.jpg" alt=""></button></li> -->
-
-                        <li><a href="index.html" onclick="listClick()" class="list-item">Home</a></li>
-                        <li><a href="#about" onclick="listClick()" class="list-item">About</a></li>
+                <ul class="nav-toggle-slide hide-on-large-only">
+                        <li class="mob-list"><a href="index.html" onclick="listClick()" class="list-item">Home</a></li>
+                        <li class="mob-list"><a href="#about" onclick="listClick()" class="list-item">About</a></li>
                         <!-- <li><a href="#" class="list-item">Services</a></li> -->
-                        <li><a href="#portfolio" onclick="listClick()" class="list-item">Portfolio</a></li>
-                        <li><a href="#contact" onclick="listClick()" class="list-item">Contact</a></li>
+                        <li class="mob-list"><a href="#portfolio" onclick="listClick()" class="list-item">Portfolio</a></li>
+                        <li class="mob-list"><a href="#contact" onclick="listClick()" class="list-item">Contact</a></li>
                         <!-- <li><a href="#" class="list-item">Blog</a></li> -->
                 </ul>
         </nav>   
     </div>
 
-    <nav class = "desktop-navigation">
-        <ul class="desktop-nav" class="nav-toggle-slide">
+    <nav class = "navbar black hide-on-med-and-down">
+        <ul class="nav hide-on-small-and-down center">
                 <li class="list"><a href="index.html" class="list-desk">Home</a></li>
-                <li class="list"><a href="#about" onclick="pageMotion()" class="list-desk">About</a></li>
+                <li class="list"><a href="#about" class="list-desk">About</a></li>
                 <li class="list"><a href="#portfolio" class="list-desk">Portfolio</a></li>
                 <li class="list"><a href="#contact" class="list-desk">Contact</a></li>
-                <li><button onclick="menuBar()" class="menu-bar" id="nav-toggle">&#9776;</button></li>
+        <!-- <div onclick="menuBar()" class="menu-bar btn-large btn-floating right" id="nav-toggle">Menu</div> -->
 
+                <!-- <li><button onclick="menuBar()" class="menu-bar" id="menu-close" id="nav-toggle"><img src="img/close.jpg" alt=""></button></li> -->
         </ul>
-</nav>
+
+        <!-- <div onclick="menuBar()" class="menu-bar btn-large btn-floating right" id="nav-toggle">Menu</div> -->
+        
+    </nav>
 
 
     <header class="header">   
+        <!-- <div onclick="menuBar()" class="menu-bar btn-large btn-floating right" id="nav-toggle">Menu</div> -->
+
         <div class="main-title">
             <!-- <img src="img/pic-33.jpg" class="header-img" alt="header-image"> -->
             <div class = "heading">
@@ -82,8 +101,8 @@
         </div> 
     </header>
 
-    <main class="main-content" id="about">
-        <h2 class="abouts-head">About Me</h2>
+    <main class="main-content scrollspy" id="about">
+        <h2 class="abouts-head indigo-text">About Me</h2>
         <div class="dash-bottom dash hover"></div>
         
         <section class="about-box">
@@ -93,37 +112,19 @@
                         <p>I am a self-taught Junior Web Developer and Logo Designer who loves working on new and exciting ideas. If you have an idea and want to make it into a reality or have app, logo or website that needs new life! So this is where i come in! With my knowledge i can take your idea to the next level. So let's have a talk and discuss this idea in your head.</p>
                     </article>
                     
-                    <!-- <article class="about-article">
-                        <h3 aria-disabled="true" style="text-align: center;">Skills</h3>
-                        <ul style="list-style: none;">
-                            <li class="skills-list"><img src="img/check.png" alt="" style="width:15px; height:15px; margin-right: 10px;"><a class="skills-link" href="#">Front-End Web Development</a></li>
-                            <li class="skills-list"><img src="img/check.png" alt="" style="width:15px; height:15px; margin-right: 10px;"><a class="skills-link" href="#">Logo Designs</a></li>
-                            <li class="skills-list"><img src="img/check.png" alt="" style="width:15px; height:15px; margin-right: 10px;"><a class="skills-link" href="#">JavaScript</a></li>
-                            <li class="skills-list"><img src="img/check.png" alt="" style="width:15px; height:15px; margin-right: 10px;"><a class="skills-link" href="#">Html5 + Css3</a></li>
-                            <li class="skills-list"><img src="img/check.png" alt="" style="width:15px; height:15px; margin-right: 10px;"><a class="skills-link" href="#">BootStrap</a></li>
-                            <li class="skills-list"><img src="img/check.png" alt="" style="width:15px; height:15px; margin-right: 10px;"><a class="skills-link" href="#">Vue</a></li>
-                            <li class="skills-list"><img src="img/check.png" alt="" style="width:15px; height:15px; margin-right: 10px;"><a class="skills-link" href="#">Git + GitHub(Version Control System) plus more!</a></li>
-
-                        </ul>
-                    </article> -->
             </div>
             <div class="main-intro">
-                <h1 class="sub-heading">I Create Wonderful Websites & Logos! <br> That's a guarantee.</h1>
-                <button class= "primary-btn btn"><a class="btn-text" href="img/Resume-Michael-Katiba.pdf" download="Michael's CV" target="blank">Download CV</a></button>
+                <h1 class="sub-heading">I Create Wonderful Websites & Logos. That's<br> a <span id="guarantee">guarantee!</span></h1>
+                <button class= "primary-btn"><a class="btn-text green-text" href="img/Resume-Michael-Katiba.pdf" download="Michael's CV" target="blank">Download CV</a></button>
         </div>
-
-            <!-- <div class="about-profile">
-                <img src="img/ME.JPEG" alt=""  class="about-pic-1 profile">
-                <img src="img/ME.JPEG" alt="" class="about-pic-2 profile">
-            </div> -->
         </section>
 
-        <div id="portfolio"></div>
-        <h2 class="projects-head">Portfolio</h2>
+        <div></div>
+        <h2 class="projects-head indigo-text">Portfolio</h2>
         <h2 class="projects-head" class="muted-text">Check out my works!</h2>
 
         <div class="dash-bottom dash hover"></div>
-        <section class="projects-box">
+        <section class="projects-box scrollspy"  id="portfolio">
             <div class="img-box">
                 <div class="dots"><h5>Restaurant Logo</h5></div>
                     <img src="img/pic-37.png" alt="" class="project-pic-1 project-pic">
@@ -186,22 +187,6 @@
             </div>
 
         </section>
-
-       <!-- <section>
- ALERT!!!: PROJECT BOX  -->
-<!-- <div class="projects-pop">
-    <button class ="close-icon" onclick="closeBtn()"><p>X</p></button>
-    <section class="project-box-1">
-        <img src="img/pic 1.jpg" alt=""  class="about-pic-1 profile">
-        <!-- <img src="img/ME.JPEG" alt="" class="about-pic-2 profile"> 
-        <div class="about-info">
-                <article>
-                    <p style="font-size: 20px;">I am a self-taught Junior Web Developer and Logo Designer who loves working on new and exciting ideas. If you have an idea and want to make it into a reality or have app, logo or website that needs new life! So this is where i come in! With my knowledge i can take your idea to the next level. So let's have a talk and discuss this idea in your head.</p>
-                </article>
-            </div>
-    </section>
-</div> -->
-<!-- ALERT!!!: PROJECT BOX  -->
 
 
 <div class="projects-modal-0">
@@ -360,45 +345,79 @@
 </main>
 
 
-<div id="contact"></div>
+<div></div>
     <section class="contact-box" style="padding-top: 10px;">
-            <h2 style="color: #fff;">Contact</h2>
+            <h2 class="indigo-text">Contact</h2>
             <div class="dash-bottom dash hover"></div>
-            <p class="contact-note" style="text-align: center; color: #fff;">Let's discuss how best i can add value to your ideas. Send me an Email on; <br>
-            <a href="mailto:qrovodesigns@gmail.com" style="background: #000024; color: #fff; text-decoration: none; padding: 0px 10px 5px 10px; border-bottom-left-radius: 20px; border-top-right-radius: 20px;" class="email-address">qrovodesigns@gmail.com
-            
-            </a>
             <!-- <a href="mailto:someone@yoursite.com">Email Us</a> -->
-            </p>
             <br>
-            <!-- <div  class="contact-info">
-                    <div class="form">
-                        <form data-netlify-recaptcha="true" data-netlify="true" type="file" action="POST">
-                           <div class="form-name form-item">
-                            <label for="username">Full Names:</label><br>
-                            <input type="text" name="name" id="fullname user">
-                           </div>
-                            
-                           <div class="form-email form-item">
-                            <label for="username">Email:</label><br>
-                            <input type="text" name="username" id="useremail user">
-                           </div>
-                           <div class="form-message form-item">
-                            <label for="text">Message:</label><br>
-                            <textarea id="form-message" placeholder="Your Message…""></textarea><br>
-                           <div data-netlify-recaptcha="true"></div>  
-                        
-                            <input class="submit-btn" type="button" value="submit">
-                           </div>
+
+            <section class="section container">
+                <div class="row">
+                    <div class="col s12 l5 scrollspy" id="contact">
+                        <h2 class="indigo-text">Get In Touch</h2>
+                        <h6>Hey Employers...</h6>
+                        <p>Looking to add web design or logo design to your services? Overloaded with work? I offer a white label 
+                        service to build websites under your brand!
+                        </p><br>
+
+                        <h6>Hey Friends...</h6>
+                        <p>“I see that you are not online, all of your potential customers are and are searching for
+                            something like what you offer daily and are finding your competitors instead!”<br>
+                            Get in touch, so that we can build something great together.
+                        </p>
+                    </div>
+            
+                    <div class="col s12 l5 offset-l2">
+                        <form name="contact" method="POST" data-netlify="true">
+                            <div class="input-field">
+                                <i class="material-icons prefix">account_circle</i>
+                                <input type="text" class="" id="names">
+                                <label class="black-text" for="names">Full Names</label>
+                            </div>
+            
+                            <div class="input-field">
+                                <i class="material-icons prefix">email</i>
+                                <input type="email" class="" id="user-email">
+                                <label class="black-text" for="useremail">Your Email</label>
+                            </div>
+            
+                            <div class="input-field">
+                                <i class="material-icons prefix">message</i>
+                                <textarea id="message" class="materialize-textarea"></textarea>
+                                <label class="black-text" for="message">Message</label>
+                            </div>
+            
+                            <p>Service required...</p>
+                            <p>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="black-text lighten-4">Web Design</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="black-text lighten-5">Logo Design</span>
+                                </label>
+                            </p>
+            
+                            <div class="input-field center-align">
+                                <button type="submit" class="btn submit-btn">SUBMIT</button>
+                            </div>
                         </form>
                     </div>
-            </div> -->
+                </div>
+            
+            </section>
+
+
     </section>
     
 
-    <footer style="background: #04000e; width: 100%;">
+    <footer style="background: #20202e; width: 100%;">
         
-        <div class="footer-info" style="background-image: linear-gradient(to right bottom, #f78401, #c40aca );">
+        <div class="footer-info" style="background: #20202e">
             <div class="dotters">
                 <div class="three-dots">
                     <a href="https://github.com/MichaelKatiba" class="icons" target="blank">
@@ -417,11 +436,24 @@
                 </div>
                 
             </div>
-            <p style="color: white; font-size: 18px; text-align: center;">Made with <img src="img/love-icon.png" style="width: 2opx; height: 16px;" alt="a red love image or icon"> by Michael Katiba</p>
             <!-- <p style="color: white; font-size: 18px; text-align: center;">Email: qrovodesigns@gmail.com</p> -->
             <p style="color: white; font-size: 18px; text-align: center;">© 2020 Qrovo. All rights reserved</p>
+            <p style="color: white; font-size: 18px; text-align: center;">Made with <img src="img/love-icon.png" style="width: 2opx; height: 16px;" alt="a red love image or icon"> by Michael Katiba</p>
         </div>
         </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="js/app.js"></script>
+
+    <script>
+
+    $(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+    });
+
+    </script>
+    <div><a href="https://ko-fi.com/michaelkatiba" target="blank"><img class="ko-fi-btn" src="img/SupportMe_red@2x.png" alt=""></a></div>
 </body>
 </html>
