@@ -351,7 +351,7 @@
             <div class="dash-bottom dash hover"></div>
             <!-- <a href="mailto:someone@yoursite.com">Email Us</a> -->
             <br>
-            
+
 
             <section class="section container">
                 <div class="row">
@@ -370,22 +370,22 @@
                     </div>
             
                     <div class="col s12 l5 offset-l2">
-                        <form name="contact" method="POST" data-netlify="true">
+                        <form name="contact" method="POST" data-netlify="true" netlify>
                             <div class="input-field">
                                 <i class="material-icons prefix">account_circle</i>
-                                <input type="text" class="" id="names">
+                                <input type="text" name="name" class="" id="names">
                                 <label class="black-text" for="names">Full Names</label>
                             </div>
             
                             <div class="input-field">
                                 <i class="material-icons prefix">email</i>
-                                <input type="email" class="" id="user-email">
-                                <label class="black-text" for="useremail">Your Email</label>
+                                <input type="email" name="email" class="" id="user-email">
+                                <label class="black-text" for="email">Your Email</label>
                             </div>
             
                             <div class="input-field">
                                 <i class="material-icons prefix">message</i>
-                                <textarea id="message" class="materialize-textarea"></textarea>
+                                <textarea name="message" id="message" class="materialize-textarea"></textarea>
                                 <label class="black-text" for="message">Message</label>
                             </div>
             
