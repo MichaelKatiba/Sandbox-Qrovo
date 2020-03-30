@@ -2,11 +2,14 @@ let toggleStatus = 1;
 function menuBar(){
 if(toggleStatus == 1){
     document.querySelector(".navigation").style.left = "0px";
+    document.querySelector(".ko-fi-btn").style.right = "-2000px";
+
     // var close = document.querySelector('#menu-close').style.visibility = "hidden";
 
     toggleStatus = 0;
 } else if(toggleStatus == 0){
     document.querySelector(".navigation").style.left = "-2000px";
+    document.querySelector(".ko-fi-btn").style.right = "10px";
 
     // document.querySelector(body).style.left = "0px";
 
