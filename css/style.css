@@ -4202,3 +4202,80 @@ z-index: 1;
         width: 100%;
     }
 }
+
+
+
+
+
+.spinner-bg{
+    background-color: #03000a;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.spinner-circle{
+    background-image: repeating-linear-gradient(to right, #d48aff07, #d62c0e, #1c448a, #ffd901);
+    width: 150px;
+    height: 150px;
+    border: none;
+    border-radius: 200px;
+    position: relative;
+    animation-name: spinner;
+    animation-duration: 1600ms;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    transform: rotate(90deg);    
+
+}
+
+
+@keyframes spinner{
+    0%{
+    transform: rotate(360deg);
+    }
+
+    100%{
+        transform: rotate(-360deg);
+        opacity: 0;
+
+    }
+
+
+}
+
+.breaker{
+background: #03000a;
+width: 150px;
+height: 50px;
+border-radius: 30px;
+
+/* display: none; */
+}
+
+.breaker-two{
+    background: #03000a;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    position: absolute;
+top: 65px;
+left: -20px;
+z-index: 3;
+    /* display: none; */
+    }
+
+.spinner-circle-over{
+    background-color: #03000a;
+    width: 140px;
+    height: 140px;
+    border: none;
+    border-radius: 200px;
+    position: absolute;
+    /* display: none; */
+}

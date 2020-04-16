@@ -155,3 +155,24 @@ window.addEventListener('scroll',scrollAppear);
 
 
 $('.scrollspy').scrollSpy();
+
+
+//SPINNER
+
+// function spin(){
+// var spinner = document.querySelector('.spinner-bg');
+//     spinner = style.display = 'none';
+
+// }
+// window.addEventListener('load', spin);
+
+
+var spinner = document.querySelector('.spinner-bg');
+window.addEventListener('load', function (){
+    // spinner = style.backgroundColor = 'green';
+    spinner.parentElement.removeChild(spinner);
+
+});
+
+
+console.log(spinner-bg);
