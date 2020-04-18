@@ -176,3 +176,5 @@ window.addEventListener('load', function (){
 
 
 console.log(spinner-bg);
+
+document.querySelectorAll
